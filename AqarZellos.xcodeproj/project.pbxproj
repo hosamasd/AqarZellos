@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E0B59D826B7C2FE00639D36 /* HomeLogSign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0B59D726B7C2FE00639D36 /* HomeLogSign.swift */; };
+		4E0B59DB26B7C32900639D36 /* HomeLogSignViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0B59DA26B7C32900639D36 /* HomeLogSignViewModel.swift */; };
+		4E0B59DE26B7C43C00639D36 /* TFWithBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0B59DD26B7C43C00639D36 /* TFWithBorder.swift */; };
+		4E0B59E026B7C9E600639D36 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0B59DF26B7C9E600639D36 /* LoginView.swift */; };
+		4E0B59E226B7CA3F00639D36 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0B59E126B7CA3F00639D36 /* SignUpView.swift */; };
 		4E729D8126B7AE3900036056 /* AqarZellosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E729D8026B7AE3900036056 /* AqarZellosApp.swift */; };
 		4E729D8326B7AE3900036056 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E729D8226B7AE3900036056 /* ContentView.swift */; };
 		4E729D8526B7AE3B00036056 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E729D8426B7AE3B00036056 /* Assets.xcassets */; };
@@ -20,6 +25,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4E0B59D726B7C2FE00639D36 /* HomeLogSign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeLogSign.swift; sourceTree = "<group>"; };
+		4E0B59DA26B7C32900639D36 /* HomeLogSignViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeLogSignViewModel.swift; sourceTree = "<group>"; };
+		4E0B59DD26B7C43C00639D36 /* TFWithBorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TFWithBorder.swift; sourceTree = "<group>"; };
+		4E0B59DF26B7C9E600639D36 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		4E0B59E126B7CA3F00639D36 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		4E729D7D26B7AE3900036056 /* AqarZellos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AqarZellos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E729D8026B7AE3900036056 /* AqarZellosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AqarZellosApp.swift; sourceTree = "<group>"; };
 		4E729D8226B7AE3900036056 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -45,6 +55,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4E0B59D926B7C31B00639D36 /* reg */ = {
+			isa = PBXGroup;
+			children = (
+				4E0B59DA26B7C32900639D36 /* HomeLogSignViewModel.swift */,
+			);
+			path = reg;
+			sourceTree = "<group>";
+		};
+		4E0B59DC26B7C42300639D36 /* custom */ = {
+			isa = PBXGroup;
+			children = (
+				4E0B59DD26B7C43C00639D36 /* TFWithBorder.swift */,
+			);
+			path = custom;
+			sourceTree = "<group>";
+		};
 		4E729D7426B7AE3900036056 = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +123,7 @@
 		4E729D9026B7AE4900036056 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				4E0B59DC26B7C42300639D36 /* custom */,
 				4E729D9526B7AE7000036056 /* reg */,
 			);
 			path = view;
@@ -112,6 +139,7 @@
 		4E729D9226B7AE4F00036056 /* wiewmodel */ = {
 			isa = PBXGroup;
 			children = (
+				4E0B59D926B7C31B00639D36 /* reg */,
 			);
 			path = wiewmodel;
 			sourceTree = "<group>";
@@ -132,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				4E729D9626B7AE7D00036056 /* HomeWelcome.swift */,
+				4E0B59D726B7C2FE00639D36 /* HomeLogSign.swift */,
 			);
 			path = reg;
 			sourceTree = "<group>";
@@ -139,6 +168,8 @@
 		4E729D9526B7AE7000036056 /* reg */ = {
 			isa = PBXGroup;
 			children = (
+				4E0B59DF26B7C9E600639D36 /* LoginView.swift */,
+				4E0B59E126B7CA3F00639D36 /* SignUpView.swift */,
 			);
 			path = reg;
 			sourceTree = "<group>";
@@ -213,10 +244,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E729DA126B7AF0600036056 /* AppDelegate.swift in Sources */,
+				4E0B59DB26B7C32900639D36 /* HomeLogSignViewModel.swift in Sources */,
 				4E729D9B26B7AEBC00036056 /* hideKeyboard.swift in Sources */,
 				4E729D9D26B7AED000036056 /* EX_View.swift in Sources */,
 				4E729D9F26B7AEE000036056 /* ex_Image.swift in Sources */,
+				4E0B59DE26B7C43C00639D36 /* TFWithBorder.swift in Sources */,
+				4E0B59E026B7C9E600639D36 /* LoginView.swift in Sources */,
 				4E729D8326B7AE3900036056 /* ContentView.swift in Sources */,
+				4E0B59E226B7CA3F00639D36 /* SignUpView.swift in Sources */,
+				4E0B59D826B7C2FE00639D36 /* HomeLogSign.swift in Sources */,
 				4E729D9726B7AE7D00036056 /* HomeWelcome.swift in Sources */,
 				4E729D8126B7AE3900036056 /* AqarZellosApp.swift in Sources */,
 				4E729D9926B7AEAA00036056 /* Extensions_ui.swift in Sources */,
