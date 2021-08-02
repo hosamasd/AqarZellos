@@ -61,11 +61,23 @@ struct HomeSettings: View {
                         VStack(spacing:-16) {
                             HomeSettingsRowView(title: "Language", img: "translate", color: "lang", isFirst: false)
                             
+                            NavigationLink(destination:
+                                            HomeHelp()
+                            )  {
+                                HomeSettingsRowView(title: "Help", img: "info", color: "help", isFirst: false)
+                                    .foregroundColor(.black)
+                                
+                            }
                             
-                            HomeSettingsRowView(title: "Help", img: "info", color: "help", isFirst: false)
-                            
-                            HomeSettingsRowView(title: "Contact us", img: "contactUs1", color: "contac", isFirst: false)
-                            
+                            NavigationLink(destination:
+                                            HomeContactUs()
+                            )  {
+                                
+                                HomeSettingsRowView(title: "Contact us", img: "contactUs1", color: "contac", isFirst: false)
+                                    .foregroundColor(.black)
+
+                                
+                            }
                             
                             HomeSettingsRowView(title: "Log Out", img: "logout", color: "logout", isFirst: false)
                             
@@ -80,7 +92,7 @@ struct HomeSettings: View {
                 }
                 .background(Color.white)
                 //                .padding(.top)
-                .clipShape(CustomCorners(corners: [.topRight,.topLeft], width: 32))
+                .clipShape(CustomCorners(corners: [.topRight,.topLeft], width: 30))
                 
                 .padding(.top)
                 
