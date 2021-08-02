@@ -10,8 +10,10 @@ import SwiftUI
 struct HomeLogSign: View {
     
     @StateObject var vm = HomeLogSignViewModel()
+    @Environment(\.presentationMode) var presentationMode
     
     var body: some View {
+        
         ZStack {
             
             Image("1")
@@ -22,67 +24,93 @@ struct HomeLogSign: View {
             
             VStack {
                 
-                Button(action: {withAnimation{vm.isLogin.toggle()}}, label: {
-                Image(systemName: "chevron.backward")
-                    .foregroundColor(.white)
-                    .frame(maxWidth:.infinity,alignment: .leading)
-                
+                Button(action: {withAnimation{
+                    if vm.isForget {
+                        vm.isForget.toggle()
+                    }else if vm.isLogin {
+                        vm.isLogin.toggle()
+                    }else {
+                        presentationMode.wrappedValue.dismiss()
+                    }
+                }}, label: {
+                    Image(systemName: "chevron.backward")
+                        .foregroundColor(.white)
+                        .frame(maxWidth:.infinity,alignment: .leading)
+                    
                 })
                 
                 Spacer()
                 
-               
+                
+                
+                
+                
+                VStack{
                     
-                    
-                    
-                    VStack{
+                    ZStack {
+                        Text(vm.getText())
+                            .foregroundColor(.white)
+                            .font(.system(size: 30))
+                            .fontWeight(.bold)
+                            .opacity(vm.isLogin ? 0 : 1)
                         
-                        ZStack {
-                            Text("Login")
-                                .foregroundColor(.white)
-                                .font(.system(size: 30))
-                                .fontWeight(.bold)
-                                .opacity(vm.isLogin ? 0 : 1)
-                            
-                            if vm.isLogin {
-                                VStack {
-                                    Text("Create Your")
-                                        .fontWeight(.bold)
-                                    Text("account")
-                                        .fontWeight(.bold)
-                                    
-                                }
-                                .foregroundColor(.white)
-                                .font(.system(size: 30))
-                                //                                .fontWeight(.bold)
+                        if vm.isLogin {
+                            VStack {
+                                Text("Create Your")
+                                    .fontWeight(.bold)
+                                Text("account")
+                                    .fontWeight(.bold)
+                                
                             }
-                            
+                            .foregroundColor(.white)
+                            .font(.system(size: 30))
+                            //                                .fontWeight(.bold)
                         }
-                        .padding(.bottom,isSmallDevice() ? 60 : 150)
                         
-                        //                        Spacer()
+                    }
+                    .padding(.bottom,isSmallDevice() ? 60 : 150)
+                    
+                    //                        Spacer()
+                    
+                    ZStack {
                         
-                        ZStack {
-                            
                         LoginView(vm: vm)
                             .opacity(vm.isLogin ? 0 : 1)
+                            .opacity(vm.isForget ? 0 : 1)
+                        
+                        if vm.isLogin {
                             
-                            if vm.isLogin {
-                             
-                                SignUpView(vm: vm)
-                                    .transition(.move(edge: .trailing))
-                            }
+                            SignUpView(vm: vm)
+                                .transition(.move(edge: .trailing))
+                                .opacity(vm.isForget ? 0 : 1)
                             
                         }
+                        
+                        if vm.isForget {
+                            
+                            ForgetView(vm: vm)
+                                .transition(.move(edge: .leading))
+                        }
+                        
                     }
-                    .padding(.top,60)
-                    
+                }
+                .padding(.top,60)
+                
                 
                 
             }
             .padding(.horizontal)
             .padding(.top,40)
             
+            
+            if vm.isLoading {
+//                LoadingCircleOpacity()
+                LoadingCubeOffset()
+            }
+        }
+        .alert(isPresented: $vm.alert) {
+            
+            Alert(title: Text("Error"), message: Text(self.vm.alertMsg), dismissButton: .default(Text("Ok")))
         }
     }
 }

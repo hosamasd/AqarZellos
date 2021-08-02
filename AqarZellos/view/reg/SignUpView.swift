@@ -20,7 +20,7 @@ struct SignUpView: View {
                     
                     TFWithBorder(txt: $vm.PhoneSign,hint:"Phone", isPass: .constant(false))
                     
-                    TFWithBorder(txt: $vm.emailLogin,hint:"Email", isPass: .constant(false))
+                    TFWithBorder(txt: $vm.emailSign,hint:"Email", isPass: .constant(false))
                     
                 }
                 
@@ -34,13 +34,9 @@ struct SignUpView: View {
                 
                 
                 Button(action: {
-                    
+                    withAnimation{vm.makeSignUp()}
                 }, label: {
                     
-                    ZStack {
-                        
-                        RoundedRectangle(cornerRadius: 10)
-                            .fill(Color("bord"))
                         
                         RoundedRectangle(cornerRadius: 10)
                             .fill(Color("mains"))
@@ -52,19 +48,11 @@ struct SignUpView: View {
                                     .fontWeight(.bold)
                             )
                             
-                            .padding(.horizontal,4)
-                            
-                            .padding(.vertical,4)
-                        
-                        
-                        
-                    }
-                    //                                .shadow(color: Color.black.opacity(0.6), radius: 0.5, x: 0.5, y: 0.5)
-                    
                     
                 })
                 .frame(height:50)
-                
+                .shadow(color: Color("bord"), radius: 5, x: 5, y: -2.5)
+
             }
             
             Text("OR sign Up WITH")

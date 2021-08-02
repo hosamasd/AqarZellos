@@ -58,32 +58,23 @@ struct HomeWelcome: View {
                             
                         }, label: {
                             
-                            ZStack {
-                                
-                                RoundedRectangle(cornerRadius: 10)
-                                    .fill(Color("bord"))
-                                
-                                RoundedRectangle(cornerRadius: 10)
-                                    .fill(Color("mains"))
-                                    .overlay(
-                                        
-                                        Text("Current location")
-                                            .foregroundColor(.white)
-                                            .font(.system(size: 22))
-                                            .fontWeight(.bold)
-                                    )
+                            
+                            RoundedRectangle(cornerRadius: 10)
+                                .fill(Color("mains"))
+                                .overlay(
                                     
-                                    .padding(.horizontal,4)
-                                    
-                                    .padding(.vertical,4)
-                                
-                                
-                                
-                            }
+                                    Text("Current location")
+                                        .foregroundColor(.white)
+                                        .font(.system(size: 22))
+                                        .fontWeight(.bold)
+                                )
+                            
                             
                             
                         })
                         .frame(height:50)
+                        .shadow(color: Color("bord"), radius: 5, x: 5, y: -2.5)
+                        
                         .padding(.horizontal,24)
                         
                         Button(action: {

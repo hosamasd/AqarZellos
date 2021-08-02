@@ -34,39 +34,39 @@ struct TFWithBorder: View {
                         TextField(hint,text:$txt)
                             .font(.system(size:14))
                             .foregroundColor(.white)
-
+                        
                     }
                     else  {
                         SecureField(hint,text:$txt)
                             .font(.system(size:14))
                             .foregroundColor(.white)
-
-
+                        
+                        
                     }
+                    
+                    
+                }
+                .padding(.leading,4)
                 
+                Spacer()
                 
+                Button(action: {withAnimation{
+                    //                        self.isPass.toggle()
+                    isPass.toggle()
+                }}, label: {
+                    
+                    Image(systemName:isPass ? "eye.slash" :  "eye")
+                        .foregroundColor(.white)
+                })
+                .opacity(isHide ? 1 : 0)
             }
-            .padding(.leading,4)
             
-            Spacer()
-            
-            Button(action: {withAnimation{
-                //                        self.isPass.toggle()
-                isPass.toggle()
-            }}, label: {
-                
-                Image(systemName:isPass ? "eye.slash" :  "eye")
-                    .foregroundColor(.white)
-            })
-            .opacity(isHide ? 1 : 0)
+            Divider()
+                .frame(height:2)
+                .background(Color("logBor"))
         }
         
-        Divider()
-            .frame(height:2)
-            .background(Color("logBor"))
     }
-    
-}
 }
 
 struct TFWithBorder_Previews: PreviewProvider {

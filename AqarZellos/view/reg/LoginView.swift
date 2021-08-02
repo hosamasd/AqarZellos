@@ -17,9 +17,9 @@ struct LoginView: View {
                 .padding(.bottom,30)
             
             
-            TFWithBorder(txt: $vm.passLogin,hint: "Password", isPass: .constant(false))
+            TFWithBorder(txt: $vm.passLogin,hint: "Password",isHide: true,isSecure: vm.isShowPass,isPass: $vm.isLoginShowPass)
             
-            Button(action: {}, label: {
+            Button(action: {withAnimation{vm.isForget.toggle()}}, label: {
                 
                 Text("Forget Password ?")
                     .foregroundColor(.white)
@@ -31,13 +31,10 @@ struct LoginView: View {
             .padding(.bottom,30)
             
             Button(action: {
-                
+                withAnimation{vm.makeLogin()}
+
             }, label: {
                 
-                ZStack {
-                    
-                    RoundedRectangle(cornerRadius: 10)
-                        .fill(Color("bord"))
                     
                     RoundedRectangle(cornerRadius: 10)
                         .fill(Color("mains"))
@@ -49,19 +46,12 @@ struct LoginView: View {
                                 .fontWeight(.bold)
                         )
                         
-                        .padding(.horizontal,4)
-                        
-                        .padding(.vertical,4)
-                    
-                    
-                    
-                }
-                //                                .shadow(color: Color.black.opacity(0.6), radius: 0.5, x: 0.5, y: 0.5)
                 
                 
             })
             .frame(height:50)
-            
+            .shadow(color: Color("bord"), radius: 5, x: 5, y: -2.5)
+
             Text("OR LOGIN WITH")
                 .foregroundColor(.white)
                 .padding()
