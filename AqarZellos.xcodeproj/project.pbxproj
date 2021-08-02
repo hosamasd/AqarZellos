@@ -11,6 +11,12 @@
 		4E729D8326B7AE3900036056 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E729D8226B7AE3900036056 /* ContentView.swift */; };
 		4E729D8526B7AE3B00036056 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E729D8426B7AE3B00036056 /* Assets.xcassets */; };
 		4E729D8826B7AE3B00036056 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E729D8726B7AE3B00036056 /* Preview Assets.xcassets */; };
+		4E729D9726B7AE7D00036056 /* HomeWelcome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E729D9626B7AE7D00036056 /* HomeWelcome.swift */; };
+		4E729D9926B7AEAA00036056 /* Extensions_ui.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E729D9826B7AEAA00036056 /* Extensions_ui.swift */; };
+		4E729D9B26B7AEBC00036056 /* hideKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E729D9A26B7AEBC00036056 /* hideKeyboard.swift */; };
+		4E729D9D26B7AED000036056 /* EX_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E729D9C26B7AED000036056 /* EX_View.swift */; };
+		4E729D9F26B7AEE000036056 /* ex_Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E729D9E26B7AEE000036056 /* ex_Image.swift */; };
+		4E729DA126B7AF0600036056 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E729DA026B7AF0600036056 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +26,12 @@
 		4E729D8426B7AE3B00036056 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4E729D8726B7AE3B00036056 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4E729D8926B7AE3B00036056 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E729D9626B7AE7D00036056 /* HomeWelcome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWelcome.swift; sourceTree = "<group>"; };
+		4E729D9826B7AEAA00036056 /* Extensions_ui.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions_ui.swift; sourceTree = "<group>"; };
+		4E729D9A26B7AEBC00036056 /* hideKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hideKeyboard.swift; sourceTree = "<group>"; };
+		4E729D9C26B7AED000036056 /* EX_View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EX_View.swift; sourceTree = "<group>"; };
+		4E729D9E26B7AEE000036056 /* ex_Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ex_Image.swift; sourceTree = "<group>"; };
+		4E729DA026B7AF0600036056 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +65,11 @@
 			isa = PBXGroup;
 			children = (
 				4E729D8026B7AE3900036056 /* AqarZellosApp.swift */,
-				4E729D8226B7AE3900036056 /* ContentView.swift */,
+				4E729D9326B7AE5700036056 /* helpers */,
+				4E729D9226B7AE4F00036056 /* wiewmodel */,
+				4E729D9126B7AE4C00036056 /* model */,
+				4E729D9026B7AE4900036056 /* view */,
+				4E729D8F26B7AE4200036056 /* scenes */,
 				4E729D8426B7AE3B00036056 /* Assets.xcassets */,
 				4E729D8926B7AE3B00036056 /* Info.plist */,
 				4E729D8626B7AE3B00036056 /* Preview Content */,
@@ -67,6 +83,64 @@
 				4E729D8726B7AE3B00036056 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4E729D8F26B7AE4200036056 /* scenes */ = {
+			isa = PBXGroup;
+			children = (
+				4E729D9426B7AE6B00036056 /* reg */,
+				4E729D8226B7AE3900036056 /* ContentView.swift */,
+			);
+			path = scenes;
+			sourceTree = "<group>";
+		};
+		4E729D9026B7AE4900036056 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				4E729D9526B7AE7000036056 /* reg */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		4E729D9126B7AE4C00036056 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		4E729D9226B7AE4F00036056 /* wiewmodel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = wiewmodel;
+			sourceTree = "<group>";
+		};
+		4E729D9326B7AE5700036056 /* helpers */ = {
+			isa = PBXGroup;
+			children = (
+				4E729D9826B7AEAA00036056 /* Extensions_ui.swift */,
+				4E729D9A26B7AEBC00036056 /* hideKeyboard.swift */,
+				4E729D9C26B7AED000036056 /* EX_View.swift */,
+				4E729D9E26B7AEE000036056 /* ex_Image.swift */,
+				4E729DA026B7AF0600036056 /* AppDelegate.swift */,
+			);
+			path = helpers;
+			sourceTree = "<group>";
+		};
+		4E729D9426B7AE6B00036056 /* reg */ = {
+			isa = PBXGroup;
+			children = (
+				4E729D9626B7AE7D00036056 /* HomeWelcome.swift */,
+			);
+			path = reg;
+			sourceTree = "<group>";
+		};
+		4E729D9526B7AE7000036056 /* reg */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = reg;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +212,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E729DA126B7AF0600036056 /* AppDelegate.swift in Sources */,
+				4E729D9B26B7AEBC00036056 /* hideKeyboard.swift in Sources */,
+				4E729D9D26B7AED000036056 /* EX_View.swift in Sources */,
+				4E729D9F26B7AEE000036056 /* ex_Image.swift in Sources */,
 				4E729D8326B7AE3900036056 /* ContentView.swift in Sources */,
+				4E729D9726B7AE7D00036056 /* HomeWelcome.swift in Sources */,
 				4E729D8126B7AE3900036056 /* AqarZellosApp.swift in Sources */,
+				4E729D9926B7AEAA00036056 /* Extensions_ui.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
