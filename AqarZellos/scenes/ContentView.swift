@@ -9,12 +9,12 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        NavigationView {
-        HomeSettings()
+//        NavigationView {
+//        HomeSettings()
+//
+//        }
 
-        }
-
-//        HomeContactUs()
+        Homenotifications()
     }
 }
 
