@@ -43,6 +43,13 @@
 		4E95762C26B9074900A0D8D1 /* NotifyModek.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E95762B26B9074900A0D8D1 /* NotifyModek.swift */; };
 		4E95762E26B907C700A0D8D1 /* NotfyRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E95762D26B907C700A0D8D1 /* NotfyRowView.swift */; };
 		4E95763126B9092300A0D8D1 /* HomenotificationsTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E95763026B9092300A0D8D1 /* HomenotificationsTopView.swift */; };
+		4EB65B0F26B9640D00B93DBF /* HomeEdit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB65B0E26B9640D00B93DBF /* HomeEdit.swift */; };
+		4EB65B1226B9643200B93DBF /* HomeEditViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB65B1126B9643200B93DBF /* HomeEditViewModel.swift */; };
+		4EB65B1426B9645900B93DBF /* HomeEditTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB65B1326B9645900B93DBF /* HomeEditTopView.swift */; };
+		4EB65B1726B964D000B93DBF /* ProfileImgRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB65B1626B964D000B93DBF /* ProfileImgRowView.swift */; };
+		4EB65B1926B965C600B93DBF /* ProfileImgCoverRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB65B1826B965C600B93DBF /* ProfileImgCoverRowView.swift */; };
+		4EB65B1B26B9663000B93DBF /* ProfileMainRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB65B1A26B9663000B93DBF /* ProfileMainRowView.swift */; };
+		4EB65B1D26B96B9700B93DBF /* SUImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB65B1C26B96B9700B93DBF /* SUImagePickerView.swift */; };
 		4EC4E86926B81DD000832ABF /* HomeHelp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC4E86826B81DD000832ABF /* HomeHelp.swift */; };
 		4EC4E86B26B81DFC00832ABF /* HomeHelpTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC4E86A26B81DFC00832ABF /* HomeHelpTopView.swift */; };
 		4EC4E86D26B8200C00832ABF /* HomeContactUs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC4E86C26B8200C00832ABF /* HomeContactUs.swift */; };
@@ -107,6 +114,13 @@
 		4E95762B26B9074900A0D8D1 /* NotifyModek.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotifyModek.swift; sourceTree = "<group>"; };
 		4E95762D26B907C700A0D8D1 /* NotfyRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotfyRowView.swift; sourceTree = "<group>"; };
 		4E95763026B9092300A0D8D1 /* HomenotificationsTopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomenotificationsTopView.swift; sourceTree = "<group>"; };
+		4EB65B0E26B9640D00B93DBF /* HomeEdit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeEdit.swift; sourceTree = "<group>"; };
+		4EB65B1126B9643200B93DBF /* HomeEditViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeEditViewModel.swift; sourceTree = "<group>"; };
+		4EB65B1326B9645900B93DBF /* HomeEditTopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeEditTopView.swift; sourceTree = "<group>"; };
+		4EB65B1626B964D000B93DBF /* ProfileImgRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileImgRowView.swift; sourceTree = "<group>"; };
+		4EB65B1826B965C600B93DBF /* ProfileImgCoverRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileImgCoverRowView.swift; sourceTree = "<group>"; };
+		4EB65B1A26B9663000B93DBF /* ProfileMainRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileMainRowView.swift; sourceTree = "<group>"; };
+		4EB65B1C26B96B9700B93DBF /* SUImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SUImagePickerView.swift; sourceTree = "<group>"; };
 		4EC4E86826B81DD000832ABF /* HomeHelp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHelp.swift; sourceTree = "<group>"; };
 		4EC4E86A26B81DFC00832ABF /* HomeHelpTopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHelpTopView.swift; sourceTree = "<group>"; };
 		4EC4E86C26B8200C00832ABF /* HomeContactUs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeContactUs.swift; sourceTree = "<group>"; };
@@ -268,6 +282,7 @@
 		4E729D8F26B7AE4200036056 /* scenes */ = {
 			isa = PBXGroup;
 			children = (
+				4EB65B0D26B9640300B93DBF /* profile */,
 				4EF4848926B930AE006747AD /* chat */,
 				4E10A52126B91A5600504746 /* Messages */,
 				4E10A51B26B9147C00504746 /* Post */,
@@ -282,6 +297,7 @@
 		4E729D9026B7AE4900036056 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				4EB65B1526B964BA00B93DBF /* profile */,
 				4EF4849026B93208006747AD /* chat */,
 				4EF4848826B930A5006747AD /* Messages */,
 				4E10A51C26B9148400504746 /* Post */,
@@ -305,6 +321,7 @@
 		4E729D9226B7AE4F00036056 /* wiewmodel */ = {
 			isa = PBXGroup;
 			children = (
+				4EB65B1026B9642B00B93DBF /* profile */,
 				4E0B59D926B7C31B00639D36 /* reg */,
 				4E52ED4526B80262004E0881 /* HomeFavoritesViewModel.swift */,
 				4E95762926B9072D00A0D8D1 /* HomenotificationsViewModel.swift */,
@@ -367,6 +384,34 @@
 				4E95763026B9092300A0D8D1 /* HomenotificationsTopView.swift */,
 			);
 			path = notififcation;
+			sourceTree = "<group>";
+		};
+		4EB65B0D26B9640300B93DBF /* profile */ = {
+			isa = PBXGroup;
+			children = (
+				4EB65B0E26B9640D00B93DBF /* HomeEdit.swift */,
+				4EB65B1626B964D000B93DBF /* ProfileImgRowView.swift */,
+				4EB65B1826B965C600B93DBF /* ProfileImgCoverRowView.swift */,
+				4EB65B1A26B9663000B93DBF /* ProfileMainRowView.swift */,
+				4EB65B1C26B96B9700B93DBF /* SUImagePickerView.swift */,
+			);
+			path = profile;
+			sourceTree = "<group>";
+		};
+		4EB65B1026B9642B00B93DBF /* profile */ = {
+			isa = PBXGroup;
+			children = (
+				4EB65B1126B9643200B93DBF /* HomeEditViewModel.swift */,
+			);
+			path = profile;
+			sourceTree = "<group>";
+		};
+		4EB65B1526B964BA00B93DBF /* profile */ = {
+			isa = PBXGroup;
+			children = (
+				4EB65B1326B9645900B93DBF /* HomeEditTopView.swift */,
+			);
+			path = profile;
 			sourceTree = "<group>";
 		};
 		4EC4E86726B81DC500832ABF /* help */ = {
@@ -508,6 +553,7 @@
 				4E95763126B9092300A0D8D1 /* HomenotificationsTopView.swift in Sources */,
 				4E10A52526B91A8400504746 /* HomeMessagesViewModel.swift in Sources */,
 				4E729DA126B7AF0600036056 /* AppDelegate.swift in Sources */,
+				4EB65B1926B965C600B93DBF /* ProfileImgCoverRowView.swift in Sources */,
 				4E0B59DB26B7C32900639D36 /* HomeLogSignViewModel.swift in Sources */,
 				4E729D9B26B7AEBC00036056 /* hideKeyboard.swift in Sources */,
 				4EC721BA26B7E2ED00AA6B37 /* ForgetView.swift in Sources */,
@@ -516,6 +562,7 @@
 				4E52ED5826B80B8A004E0881 /* CustomCorners.swift in Sources */,
 				4E95762C26B9074900A0D8D1 /* NotifyModek.swift in Sources */,
 				4E10A52B26B91B9A00504746 /* HomeMessagesTopView.swift in Sources */,
+				4EB65B1426B9645900B93DBF /* HomeEditTopView.swift in Sources */,
 				4EC721C626B7E63400AA6B37 /* LoadingView.swift in Sources */,
 				4EC721C926B7E63400AA6B37 /* LoadingCircleOpacity.swift in Sources */,
 				4EF1CAE826B94FA1007A9DC6 /* SecondAdaptsToSoftwareKeyboard.swift in Sources */,
@@ -543,15 +590,19 @@
 				4E0B59D826B7C2FE00639D36 /* HomeLogSign.swift in Sources */,
 				4E10A52926B91B7400504746 /* MessageRowView.swift in Sources */,
 				4E95762E26B907C700A0D8D1 /* NotfyRowView.swift in Sources */,
+				4EB65B1726B964D000B93DBF /* ProfileImgRowView.swift in Sources */,
 				4EF4848D26B930D8006747AD /* HomeChatViewModel.swift in Sources */,
 				4EF4848B26B930B9006747AD /* HomeChat.swift in Sources */,
 				4EC721C426B7E63400AA6B37 /* LoadingCircleGradual.swift in Sources */,
 				4EF4849426B932C4006747AD /* BubbleArrow.swift in Sources */,
+				4EB65B0F26B9640D00B93DBF /* HomeEdit.swift in Sources */,
 				4E729D9726B7AE7D00036056 /* HomeWelcome.swift in Sources */,
 				4EF1CAE426B94F3D007A9DC6 /* DynamicHeightTextField.swift in Sources */,
 				4EC721C526B7E63400AA6B37 /* LoadingCircleFlip.swift in Sources */,
+				4EB65B1226B9643200B93DBF /* HomeEditViewModel.swift in Sources */,
 				4E52ED5026B807BE004E0881 /* HomeSettings.swift in Sources */,
 				4E52ED4426B80205004E0881 /* HomeFavorites.swift in Sources */,
+				4EB65B1D26B96B9700B93DBF /* SUImagePickerView.swift in Sources */,
 				4E729D8126B7AE3900036056 /* AqarZellosApp.swift in Sources */,
 				4E52ED4A26B8037C004E0881 /* HomeFavoritesTopView.swift in Sources */,
 				4E52ED4826B80287004E0881 /* FavoriteModel.swift in Sources */,
@@ -559,6 +610,7 @@
 				4E52ED4C26B804AC004E0881 /* FavRowView.swift in Sources */,
 				4EC721C726B7E63400AA6B37 /* ActivityIndicator.swift in Sources */,
 				4E729D9926B7AEAA00036056 /* Extensions_ui.swift in Sources */,
+				4EB65B1B26B9663000B93DBF /* ProfileMainRowView.swift in Sources */,
 				4E52ED4626B80262004E0881 /* HomeFavoritesViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
