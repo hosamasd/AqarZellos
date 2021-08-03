@@ -50,6 +50,7 @@ struct Homenotifications: View {
                         
                     }
                     .zIndex(0)
+                    
                     .border(width: 10, edges: [.top], color: Color("bord"))
                     
                     .padding(.top,20)
