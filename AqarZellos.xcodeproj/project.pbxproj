@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E063B8426B98537008BCDA7 /* HomeShowProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E063B8326B98537008BCDA7 /* HomeShowProfile.swift */; };
+		4E063B8826B985BF008BCDA7 /* HomeShowProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E063B8726B985BF008BCDA7 /* HomeShowProfileViewModel.swift */; };
+		4E063B8B26B98C00008BCDA7 /* HomeShowProfilePosts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E063B8A26B98C00008BCDA7 /* HomeShowProfilePosts.swift */; };
+		4E063B8D26B98C92008BCDA7 /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E063B8C26B98C92008BCDA7 /* PostModel.swift */; };
+		4E063B8F26B98CF4008BCDA7 /* PostRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E063B8E26B98CF4008BCDA7 /* PostRowView.swift */; };
+		4E063B9226B98FB6008BCDA7 /* ProfileDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E063B9126B98FB6008BCDA7 /* ProfileDetailsView.swift */; };
 		4E0B59D826B7C2FE00639D36 /* HomeLogSign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0B59D726B7C2FE00639D36 /* HomeLogSign.swift */; };
 		4E0B59DB26B7C32900639D36 /* HomeLogSignViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0B59DA26B7C32900639D36 /* HomeLogSignViewModel.swift */; };
 		4E0B59DE26B7C43C00639D36 /* TFWithBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0B59DD26B7C43C00639D36 /* TFWithBorder.swift */; };
@@ -76,6 +82,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4E063B8326B98537008BCDA7 /* HomeShowProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeShowProfile.swift; sourceTree = "<group>"; };
+		4E063B8726B985BF008BCDA7 /* HomeShowProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeShowProfileViewModel.swift; sourceTree = "<group>"; };
+		4E063B8A26B98C00008BCDA7 /* HomeShowProfilePosts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeShowProfilePosts.swift; sourceTree = "<group>"; };
+		4E063B8C26B98C92008BCDA7 /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
+		4E063B8E26B98CF4008BCDA7 /* PostRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRowView.swift; sourceTree = "<group>"; };
+		4E063B9126B98FB6008BCDA7 /* ProfileDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDetailsView.swift; sourceTree = "<group>"; };
 		4E0B59D726B7C2FE00639D36 /* HomeLogSign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeLogSign.swift; sourceTree = "<group>"; };
 		4E0B59DA26B7C32900639D36 /* HomeLogSignViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeLogSignViewModel.swift; sourceTree = "<group>"; };
 		4E0B59DD26B7C43C00639D36 /* TFWithBorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TFWithBorder.swift; sourceTree = "<group>"; };
@@ -157,6 +169,58 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4E063B8126B984F5008BCDA7 /* edit */ = {
+			isa = PBXGroup;
+			children = (
+				4EB65B0E26B9640D00B93DBF /* HomeEdit.swift */,
+			);
+			path = edit;
+			sourceTree = "<group>";
+		};
+		4E063B8226B9851C008BCDA7 /* edit */ = {
+			isa = PBXGroup;
+			children = (
+				4EB65B1626B964D000B93DBF /* ProfileImgRowView.swift */,
+				4EB65B1826B965C600B93DBF /* ProfileImgCoverRowView.swift */,
+				4EB65B1A26B9663000B93DBF /* ProfileMainRowView.swift */,
+				4EB65B1C26B96B9700B93DBF /* SUImagePickerView.swift */,
+			);
+			path = edit;
+			sourceTree = "<group>";
+		};
+		4E063B8526B98556008BCDA7 /* show */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = show;
+			sourceTree = "<group>";
+		};
+		4E063B8626B98574008BCDA7 /* show */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = show;
+			sourceTree = "<group>";
+		};
+		4E063B8926B98BF7008BCDA7 /* posts */ = {
+			isa = PBXGroup;
+			children = (
+				4E063B8A26B98C00008BCDA7 /* HomeShowProfilePosts.swift */,
+				4E063B8E26B98CF4008BCDA7 /* PostRowView.swift */,
+			);
+			path = posts;
+			sourceTree = "<group>";
+		};
+		4E063B9026B98F8C008BCDA7 /* show profile */ = {
+			isa = PBXGroup;
+			children = (
+				4E063B8326B98537008BCDA7 /* HomeShowProfile.swift */,
+				4E063B8926B98BF7008BCDA7 /* posts */,
+				4E063B9126B98FB6008BCDA7 /* ProfileDetailsView.swift */,
+			);
+			path = "show profile";
+			sourceTree = "<group>";
+		};
 		4E0B59D926B7C31B00639D36 /* reg */ = {
 			isa = PBXGroup;
 			children = (
@@ -314,6 +378,7 @@
 				4E52ED4726B80287004E0881 /* FavoriteModel.swift */,
 				4E95762B26B9074900A0D8D1 /* NotifyModek.swift */,
 				4E10A52626B91AA500504746 /* MessageModel.swift */,
+				4E063B8C26B98C92008BCDA7 /* PostModel.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -389,11 +454,9 @@
 		4EB65B0D26B9640300B93DBF /* profile */ = {
 			isa = PBXGroup;
 			children = (
-				4EB65B0E26B9640D00B93DBF /* HomeEdit.swift */,
-				4EB65B1626B964D000B93DBF /* ProfileImgRowView.swift */,
-				4EB65B1826B965C600B93DBF /* ProfileImgCoverRowView.swift */,
-				4EB65B1A26B9663000B93DBF /* ProfileMainRowView.swift */,
-				4EB65B1C26B96B9700B93DBF /* SUImagePickerView.swift */,
+				4E063B9026B98F8C008BCDA7 /* show profile */,
+				4E063B8526B98556008BCDA7 /* show */,
+				4E063B8126B984F5008BCDA7 /* edit */,
 			);
 			path = profile;
 			sourceTree = "<group>";
@@ -402,6 +465,7 @@
 			isa = PBXGroup;
 			children = (
 				4EB65B1126B9643200B93DBF /* HomeEditViewModel.swift */,
+				4E063B8726B985BF008BCDA7 /* HomeShowProfileViewModel.swift */,
 			);
 			path = profile;
 			sourceTree = "<group>";
@@ -409,6 +473,8 @@
 		4EB65B1526B964BA00B93DBF /* profile */ = {
 			isa = PBXGroup;
 			children = (
+				4E063B8626B98574008BCDA7 /* show */,
+				4E063B8226B9851C008BCDA7 /* edit */,
 				4EB65B1326B9645900B93DBF /* HomeEditTopView.swift */,
 			);
 			path = profile;
@@ -548,6 +614,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E063B8F26B98CF4008BCDA7 /* PostRowView.swift in Sources */,
 				4EC721C826B7E63400AA6B37 /* LoadingCircleColors.swift in Sources */,
 				4EC4E86B26B81DFC00832ABF /* HomeHelpTopView.swift in Sources */,
 				4E95763126B9092300A0D8D1 /* HomenotificationsTopView.swift in Sources */,
@@ -555,8 +622,10 @@
 				4E729DA126B7AF0600036056 /* AppDelegate.swift in Sources */,
 				4EB65B1926B965C600B93DBF /* ProfileImgCoverRowView.swift in Sources */,
 				4E0B59DB26B7C32900639D36 /* HomeLogSignViewModel.swift in Sources */,
+				4E063B8B26B98C00008BCDA7 /* HomeShowProfilePosts.swift in Sources */,
 				4E729D9B26B7AEBC00036056 /* hideKeyboard.swift in Sources */,
 				4EC721BA26B7E2ED00AA6B37 /* ForgetView.swift in Sources */,
+				4E063B9226B98FB6008BCDA7 /* ProfileDetailsView.swift in Sources */,
 				4E10A52026B914D500504746 /* HomePostTopView.swift in Sources */,
 				4EF4848F26B93152006747AD /* HomeChatTopView.swift in Sources */,
 				4E52ED5826B80B8A004E0881 /* CustomCorners.swift in Sources */,
@@ -564,9 +633,11 @@
 				4E10A52B26B91B9A00504746 /* HomeMessagesTopView.swift in Sources */,
 				4EB65B1426B9645900B93DBF /* HomeEditTopView.swift in Sources */,
 				4EC721C626B7E63400AA6B37 /* LoadingView.swift in Sources */,
+				4E063B8826B985BF008BCDA7 /* HomeShowProfileViewModel.swift in Sources */,
 				4EC721C926B7E63400AA6B37 /* LoadingCircleOpacity.swift in Sources */,
 				4EF1CAE826B94FA1007A9DC6 /* SecondAdaptsToSoftwareKeyboard.swift in Sources */,
 				4E95762826B9070A00A0D8D1 /* Homenotifications.swift in Sources */,
+				4E063B8D26B98C92008BCDA7 /* PostModel.swift in Sources */,
 				4E10A52326B91A6000504746 /* HomeMessages.swift in Sources */,
 				4E10A51E26B9149000504746 /* HomePost.swift in Sources */,
 				4E52ED5426B8088F004E0881 /* HomeSettingsRowView.swift in Sources */,
@@ -579,6 +650,7 @@
 				4EC4E86D26B8200C00832ABF /* HomeContactUs.swift in Sources */,
 				4EF1CAEA26B956F6007A9DC6 /* SHomeChat.swift in Sources */,
 				4E0B59E026B7C9E600639D36 /* LoginView.swift in Sources */,
+				4E063B8426B98537008BCDA7 /* HomeShowProfile.swift in Sources */,
 				4E729D8326B7AE3900036056 /* ContentView.swift in Sources */,
 				4EF1CAE626B94F7E007A9DC6 /* KeyboardEmojiView.swift in Sources */,
 				4EF1CAE226B94E8C007A9DC6 /* ChatBoxMessagesView.swift in Sources */,

@@ -14,7 +14,7 @@ struct ContentView: View {
 //
 //        }
 
-        HomeEdit()
+        HomeShowProfile()
     }
 }
 
