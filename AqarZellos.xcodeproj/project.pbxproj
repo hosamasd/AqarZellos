@@ -12,6 +12,8 @@
 		4E0B59DE26B7C43C00639D36 /* TFWithBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0B59DD26B7C43C00639D36 /* TFWithBorder.swift */; };
 		4E0B59E026B7C9E600639D36 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0B59DF26B7C9E600639D36 /* LoginView.swift */; };
 		4E0B59E226B7CA3F00639D36 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0B59E126B7CA3F00639D36 /* SignUpView.swift */; };
+		4E10A51E26B9149000504746 /* HomePost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E10A51D26B9149000504746 /* HomePost.swift */; };
+		4E10A52026B914D500504746 /* HomePostTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E10A51F26B914D500504746 /* HomePostTopView.swift */; };
 		4E52ED4426B80205004E0881 /* HomeFavorites.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E52ED4326B80205004E0881 /* HomeFavorites.swift */; };
 		4E52ED4626B80262004E0881 /* HomeFavoritesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E52ED4526B80262004E0881 /* HomeFavoritesViewModel.swift */; };
 		4E52ED4826B80287004E0881 /* FavoriteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E52ED4726B80287004E0881 /* FavoriteModel.swift */; };
@@ -57,6 +59,8 @@
 		4E0B59DD26B7C43C00639D36 /* TFWithBorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TFWithBorder.swift; sourceTree = "<group>"; };
 		4E0B59DF26B7C9E600639D36 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		4E0B59E126B7CA3F00639D36 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		4E10A51D26B9149000504746 /* HomePost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePost.swift; sourceTree = "<group>"; };
+		4E10A51F26B914D500504746 /* HomePostTopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePostTopView.swift; sourceTree = "<group>"; };
 		4E52ED4326B80205004E0881 /* HomeFavorites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFavorites.swift; sourceTree = "<group>"; };
 		4E52ED4526B80262004E0881 /* HomeFavoritesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFavoritesViewModel.swift; sourceTree = "<group>"; };
 		4E52ED4726B80287004E0881 /* FavoriteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteModel.swift; sourceTree = "<group>"; };
@@ -125,6 +129,22 @@
 				4E52ED5726B80B8A004E0881 /* CustomCorners.swift */,
 			);
 			path = custom;
+			sourceTree = "<group>";
+		};
+		4E10A51B26B9147C00504746 /* Post */ = {
+			isa = PBXGroup;
+			children = (
+				4E10A51D26B9149000504746 /* HomePost.swift */,
+				4E10A51F26B914D500504746 /* HomePostTopView.swift */,
+			);
+			path = Post;
+			sourceTree = "<group>";
+		};
+		4E10A51C26B9148400504746 /* Post */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Post;
 			sourceTree = "<group>";
 		};
 		4E52ED4126B801E7004E0881 /* favorites */ = {
@@ -210,6 +230,7 @@
 		4E729D8F26B7AE4200036056 /* scenes */ = {
 			isa = PBXGroup;
 			children = (
+				4E10A51B26B9147C00504746 /* Post */,
 				4E52ED4D26B807AC004E0881 /* Settings */,
 				4E52ED4126B801E7004E0881 /* favorites */,
 				4E729D9426B7AE6B00036056 /* reg */,
@@ -221,6 +242,7 @@
 		4E729D9026B7AE4900036056 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				4E10A51C26B9148400504746 /* Post */,
 				4E52ED4E26B807B6004E0881 /* Settings */,
 				4E0B59DC26B7C42300639D36 /* custom */,
 				4E729D9526B7AE7000036056 /* reg */,
@@ -411,11 +433,13 @@
 				4E0B59DB26B7C32900639D36 /* HomeLogSignViewModel.swift in Sources */,
 				4E729D9B26B7AEBC00036056 /* hideKeyboard.swift in Sources */,
 				4EC721BA26B7E2ED00AA6B37 /* ForgetView.swift in Sources */,
+				4E10A52026B914D500504746 /* HomePostTopView.swift in Sources */,
 				4E52ED5826B80B8A004E0881 /* CustomCorners.swift in Sources */,
 				4E95762C26B9074900A0D8D1 /* NotifyModek.swift in Sources */,
 				4EC721C626B7E63400AA6B37 /* LoadingView.swift in Sources */,
 				4EC721C926B7E63400AA6B37 /* LoadingCircleOpacity.swift in Sources */,
 				4E95762826B9070A00A0D8D1 /* Homenotifications.swift in Sources */,
+				4E10A51E26B9149000504746 /* HomePost.swift in Sources */,
 				4E52ED5426B8088F004E0881 /* HomeSettingsRowView.swift in Sources */,
 				4E95762A26B9072D00A0D8D1 /* HomenotificationsViewModel.swift in Sources */,
 				4E729D9D26B7AED000036056 /* EX_View.swift in Sources */,
