@@ -13,6 +13,10 @@ class HomeChatViewModel: ObservableObject {
     @Published var alertMsg = ""
     @Published var isLoading = false
     
+    
+    @Published var showEmoj = false
+
+    @Published var txtMessage=""
     @Published var messagesArray:[MessageModel] = [MessageModel]()
     
     init() {

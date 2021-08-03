@@ -1,5 +1,5 @@
 //
-//  HomeChat.swift
+//  SHomeChat.swift
 //  AqarZellos
 //
 //  Created by hosam on 03/08/2021.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct HomeChat: View {
+struct SHomeChat: View {
     @State var columns = Array(repeating: GridItem(.flexible(), spacing: 12), count: 1)
     @StateObject var vm = HomeChatViewModel()
     var x =                 MessageModel(name: "Marie Winter", pic: "sss", desc: "Happiness is not something readymade. \nIt comes from your own actions.")
@@ -102,33 +102,7 @@ struct HomeChat: View {
                     
                     Spacer()
                     
-                    ZStack {
-                        
-                        //chat box
-                        ChatBoxMessagesView(vm:vm)
-                            //                .padding()
-                            .padding(.horizontal)
-                            .animation(.easeOut)
-                            
-                            
-                            .padding(.bottom,getSafeArea()?.bottom == 0 ? 30 : 30)
-                            
-                            .modifier(SecondAdaptsToSoftwareKeyboard())
-                            
-                            .offset(y:vm.showEmoj ? -160 : 0)
-                        
-                        if vm.showEmoj {
-                            KeyboardEmojiView(show: $vm.showEmoj, txt: self.$vm.txtMessage)
-                                .offset(y: self.vm.showEmoj ?  (UIApplication.shared.windows.first?.safeAreaInsets.bottom)! : UIScreen.main.bounds.height)
-                                .animation(.easeOut)
-                                
-                                .transition(.move(edge: .bottom))
-                            
-                        }
-                        
-                        
-                    }
-                    .background(Color.white)
+             
 //                    .padding(.horizontal)
                 }
                 .background(Color.white)
@@ -169,8 +143,38 @@ struct HomeChat: View {
                 
 //                Spacer()
                 
+                ZStack {
+                    
+                    //chat box
+                    ChatBoxMessagesView(vm:vm)
+                        //                .padding()
+                        .padding(.horizontal)
+                        .animation(.easeOut)
+                        
+                        
+                        .padding(.bottom,getSafeArea()?.bottom == 0 ? 30 : 30)
+                        
+                        .modifier(SecondAdaptsToSoftwareKeyboard())
+                        
+                        .offset(y:vm.showEmoj ? -160 : 0)
+                    
+                    if vm.showEmoj {
+                        KeyboardEmojiView(show: $vm.showEmoj, txt: self.$vm.txtMessage)
+                            .offset(y: self.vm.showEmoj ?  (UIApplication.shared.windows.first?.safeAreaInsets.bottom)! : UIScreen.main.bounds.height)
+                            .animation(.easeOut)
+                            
+                            .transition(.move(edge: .bottom))
+                        
+                    }
+                    
+                    
+                }
+                .background(Color.white)
+                
             }
             .padding(.top,40)
+            
+            
             
 //            .edgesIgnoringSafeArea(.all)
             
@@ -185,8 +189,8 @@ struct HomeChat: View {
     }
 }
 
-struct HomeChat_Previews: PreviewProvider {
+struct SHomeChat_Previews: PreviewProvider {
     static var previews: some View {
-        HomeChat()
+        SHomeChat()
     }
 }

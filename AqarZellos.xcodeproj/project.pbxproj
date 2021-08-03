@@ -56,6 +56,11 @@
 		4EC721C926B7E63400AA6B37 /* LoadingCircleOpacity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC721C126B7E63400AA6B37 /* LoadingCircleOpacity.swift */; };
 		4EC721CA26B7E63400AA6B37 /* LoadingCapsuleSpacing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC721C226B7E63400AA6B37 /* LoadingCapsuleSpacing.swift */; };
 		4EC721CB26B7E63400AA6B37 /* LoadingCubeOffset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC721C326B7E63400AA6B37 /* LoadingCubeOffset.swift */; };
+		4EF1CAE226B94E8C007A9DC6 /* ChatBoxMessagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF1CAE126B94E8C007A9DC6 /* ChatBoxMessagesView.swift */; };
+		4EF1CAE426B94F3D007A9DC6 /* DynamicHeightTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF1CAE326B94F3D007A9DC6 /* DynamicHeightTextField.swift */; };
+		4EF1CAE626B94F7E007A9DC6 /* KeyboardEmojiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF1CAE526B94F7E007A9DC6 /* KeyboardEmojiView.swift */; };
+		4EF1CAE826B94FA1007A9DC6 /* SecondAdaptsToSoftwareKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF1CAE726B94FA1007A9DC6 /* SecondAdaptsToSoftwareKeyboard.swift */; };
+		4EF1CAEA26B956F6007A9DC6 /* SHomeChat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF1CAE926B956F6007A9DC6 /* SHomeChat.swift */; };
 		4EF4848B26B930B9006747AD /* HomeChat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF4848A26B930B9006747AD /* HomeChat.swift */; };
 		4EF4848D26B930D8006747AD /* HomeChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF4848C26B930D8006747AD /* HomeChatViewModel.swift */; };
 		4EF4848F26B93152006747AD /* HomeChatTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF4848E26B93152006747AD /* HomeChatTopView.swift */; };
@@ -115,6 +120,11 @@
 		4EC721C126B7E63400AA6B37 /* LoadingCircleOpacity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingCircleOpacity.swift; sourceTree = "<group>"; };
 		4EC721C226B7E63400AA6B37 /* LoadingCapsuleSpacing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingCapsuleSpacing.swift; sourceTree = "<group>"; };
 		4EC721C326B7E63400AA6B37 /* LoadingCubeOffset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingCubeOffset.swift; sourceTree = "<group>"; };
+		4EF1CAE126B94E8C007A9DC6 /* ChatBoxMessagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBoxMessagesView.swift; sourceTree = "<group>"; };
+		4EF1CAE326B94F3D007A9DC6 /* DynamicHeightTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicHeightTextField.swift; sourceTree = "<group>"; };
+		4EF1CAE526B94F7E007A9DC6 /* KeyboardEmojiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardEmojiView.swift; sourceTree = "<group>"; };
+		4EF1CAE726B94FA1007A9DC6 /* SecondAdaptsToSoftwareKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondAdaptsToSoftwareKeyboard.swift; sourceTree = "<group>"; };
+		4EF1CAE926B956F6007A9DC6 /* SHomeChat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SHomeChat.swift; sourceTree = "<group>"; };
 		4EF4848A26B930B9006747AD /* HomeChat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeChat.swift; sourceTree = "<group>"; };
 		4EF4848C26B930D8006747AD /* HomeChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeChatViewModel.swift; sourceTree = "<group>"; };
 		4EF4848E26B93152006747AD /* HomeChatTopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeChatTopView.swift; sourceTree = "<group>"; };
@@ -404,6 +414,7 @@
 		4EF4848926B930AE006747AD /* chat */ = {
 			isa = PBXGroup;
 			children = (
+				4EF1CAE926B956F6007A9DC6 /* SHomeChat.swift */,
 				4EF4848A26B930B9006747AD /* HomeChat.swift */,
 				4EF4848E26B93152006747AD /* HomeChatTopView.swift */,
 			);
@@ -415,6 +426,10 @@
 			children = (
 				4EF4849126B9320D006747AD /* ChatBubble.swift */,
 				4EF4849326B932C4006747AD /* BubbleArrow.swift */,
+				4EF1CAE126B94E8C007A9DC6 /* ChatBoxMessagesView.swift */,
+				4EF1CAE326B94F3D007A9DC6 /* DynamicHeightTextField.swift */,
+				4EF1CAE526B94F7E007A9DC6 /* KeyboardEmojiView.swift */,
+				4EF1CAE726B94FA1007A9DC6 /* SecondAdaptsToSoftwareKeyboard.swift */,
 			);
 			path = chat;
 			sourceTree = "<group>";
@@ -503,6 +518,7 @@
 				4E10A52B26B91B9A00504746 /* HomeMessagesTopView.swift in Sources */,
 				4EC721C626B7E63400AA6B37 /* LoadingView.swift in Sources */,
 				4EC721C926B7E63400AA6B37 /* LoadingCircleOpacity.swift in Sources */,
+				4EF1CAE826B94FA1007A9DC6 /* SecondAdaptsToSoftwareKeyboard.swift in Sources */,
 				4E95762826B9070A00A0D8D1 /* Homenotifications.swift in Sources */,
 				4E10A52326B91A6000504746 /* HomeMessages.swift in Sources */,
 				4E10A51E26B9149000504746 /* HomePost.swift in Sources */,
@@ -514,8 +530,11 @@
 				4E0B59DE26B7C43C00639D36 /* TFWithBorder.swift in Sources */,
 				4EC4E86F26B8204F00832ABF /* HomeContactUsTopView.swift in Sources */,
 				4EC4E86D26B8200C00832ABF /* HomeContactUs.swift in Sources */,
+				4EF1CAEA26B956F6007A9DC6 /* SHomeChat.swift in Sources */,
 				4E0B59E026B7C9E600639D36 /* LoginView.swift in Sources */,
 				4E729D8326B7AE3900036056 /* ContentView.swift in Sources */,
+				4EF1CAE626B94F7E007A9DC6 /* KeyboardEmojiView.swift in Sources */,
+				4EF1CAE226B94E8C007A9DC6 /* ChatBoxMessagesView.swift in Sources */,
 				4E10A52726B91AA500504746 /* MessageModel.swift in Sources */,
 				4EC721CB26B7E63400AA6B37 /* LoadingCubeOffset.swift in Sources */,
 				4E0B59E226B7CA3F00639D36 /* SignUpView.swift in Sources */,
@@ -529,6 +548,7 @@
 				4EC721C426B7E63400AA6B37 /* LoadingCircleGradual.swift in Sources */,
 				4EF4849426B932C4006747AD /* BubbleArrow.swift in Sources */,
 				4E729D9726B7AE7D00036056 /* HomeWelcome.swift in Sources */,
+				4EF1CAE426B94F3D007A9DC6 /* DynamicHeightTextField.swift in Sources */,
 				4EC721C526B7E63400AA6B37 /* LoadingCircleFlip.swift in Sources */,
 				4E52ED5026B807BE004E0881 /* HomeSettings.swift in Sources */,
 				4E52ED4426B80205004E0881 /* HomeFavorites.swift in Sources */,
