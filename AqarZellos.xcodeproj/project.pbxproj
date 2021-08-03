@@ -56,6 +56,11 @@
 		4EC721C926B7E63400AA6B37 /* LoadingCircleOpacity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC721C126B7E63400AA6B37 /* LoadingCircleOpacity.swift */; };
 		4EC721CA26B7E63400AA6B37 /* LoadingCapsuleSpacing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC721C226B7E63400AA6B37 /* LoadingCapsuleSpacing.swift */; };
 		4EC721CB26B7E63400AA6B37 /* LoadingCubeOffset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC721C326B7E63400AA6B37 /* LoadingCubeOffset.swift */; };
+		4EF4848B26B930B9006747AD /* HomeChat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF4848A26B930B9006747AD /* HomeChat.swift */; };
+		4EF4848D26B930D8006747AD /* HomeChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF4848C26B930D8006747AD /* HomeChatViewModel.swift */; };
+		4EF4848F26B93152006747AD /* HomeChatTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF4848E26B93152006747AD /* HomeChatTopView.swift */; };
+		4EF4849226B9320D006747AD /* ChatBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF4849126B9320D006747AD /* ChatBubble.swift */; };
+		4EF4849426B932C4006747AD /* BubbleArrow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF4849326B932C4006747AD /* BubbleArrow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -110,6 +115,11 @@
 		4EC721C126B7E63400AA6B37 /* LoadingCircleOpacity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingCircleOpacity.swift; sourceTree = "<group>"; };
 		4EC721C226B7E63400AA6B37 /* LoadingCapsuleSpacing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingCapsuleSpacing.swift; sourceTree = "<group>"; };
 		4EC721C326B7E63400AA6B37 /* LoadingCubeOffset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingCubeOffset.swift; sourceTree = "<group>"; };
+		4EF4848A26B930B9006747AD /* HomeChat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeChat.swift; sourceTree = "<group>"; };
+		4EF4848C26B930D8006747AD /* HomeChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeChatViewModel.swift; sourceTree = "<group>"; };
+		4EF4848E26B93152006747AD /* HomeChatTopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeChatTopView.swift; sourceTree = "<group>"; };
+		4EF4849126B9320D006747AD /* ChatBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBubble.swift; sourceTree = "<group>"; };
+		4EF4849326B932C4006747AD /* BubbleArrow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleArrow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,8 +171,6 @@
 			isa = PBXGroup;
 			children = (
 				4E10A52226B91A6000504746 /* HomeMessages.swift */,
-				4E10A52A26B91B9A00504746 /* HomeMessagesTopView.swift */,
-				4E10A52826B91B7400504746 /* MessageRowView.swift */,
 			);
 			path = Messages;
 			sourceTree = "<group>";
@@ -250,6 +258,7 @@
 		4E729D8F26B7AE4200036056 /* scenes */ = {
 			isa = PBXGroup;
 			children = (
+				4EF4848926B930AE006747AD /* chat */,
 				4E10A52126B91A5600504746 /* Messages */,
 				4E10A51B26B9147C00504746 /* Post */,
 				4E52ED4D26B807AC004E0881 /* Settings */,
@@ -263,6 +272,8 @@
 		4E729D9026B7AE4900036056 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				4EF4849026B93208006747AD /* chat */,
+				4EF4848826B930A5006747AD /* Messages */,
 				4E10A51C26B9148400504746 /* Post */,
 				4E52ED4E26B807B6004E0881 /* Settings */,
 				4E0B59DC26B7C42300639D36 /* custom */,
@@ -288,6 +299,7 @@
 				4E52ED4526B80262004E0881 /* HomeFavoritesViewModel.swift */,
 				4E95762926B9072D00A0D8D1 /* HomenotificationsViewModel.swift */,
 				4E10A52426B91A8400504746 /* HomeMessagesViewModel.swift */,
+				4EF4848C26B930D8006747AD /* HomeChatViewModel.swift */,
 			);
 			path = wiewmodel;
 			sourceTree = "<group>";
@@ -380,6 +392,33 @@
 			path = loodingview;
 			sourceTree = "<group>";
 		};
+		4EF4848826B930A5006747AD /* Messages */ = {
+			isa = PBXGroup;
+			children = (
+				4E10A52A26B91B9A00504746 /* HomeMessagesTopView.swift */,
+				4E10A52826B91B7400504746 /* MessageRowView.swift */,
+			);
+			path = Messages;
+			sourceTree = "<group>";
+		};
+		4EF4848926B930AE006747AD /* chat */ = {
+			isa = PBXGroup;
+			children = (
+				4EF4848A26B930B9006747AD /* HomeChat.swift */,
+				4EF4848E26B93152006747AD /* HomeChatTopView.swift */,
+			);
+			path = chat;
+			sourceTree = "<group>";
+		};
+		4EF4849026B93208006747AD /* chat */ = {
+			isa = PBXGroup;
+			children = (
+				4EF4849126B9320D006747AD /* ChatBubble.swift */,
+				4EF4849326B932C4006747AD /* BubbleArrow.swift */,
+			);
+			path = chat;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -458,6 +497,7 @@
 				4E729D9B26B7AEBC00036056 /* hideKeyboard.swift in Sources */,
 				4EC721BA26B7E2ED00AA6B37 /* ForgetView.swift in Sources */,
 				4E10A52026B914D500504746 /* HomePostTopView.swift in Sources */,
+				4EF4848F26B93152006747AD /* HomeChatTopView.swift in Sources */,
 				4E52ED5826B80B8A004E0881 /* CustomCorners.swift in Sources */,
 				4E95762C26B9074900A0D8D1 /* NotifyModek.swift in Sources */,
 				4E10A52B26B91B9A00504746 /* HomeMessagesTopView.swift in Sources */,
@@ -467,6 +507,7 @@
 				4E10A52326B91A6000504746 /* HomeMessages.swift in Sources */,
 				4E10A51E26B9149000504746 /* HomePost.swift in Sources */,
 				4E52ED5426B8088F004E0881 /* HomeSettingsRowView.swift in Sources */,
+				4EF4849226B9320D006747AD /* ChatBubble.swift in Sources */,
 				4E95762A26B9072D00A0D8D1 /* HomenotificationsViewModel.swift in Sources */,
 				4E729D9D26B7AED000036056 /* EX_View.swift in Sources */,
 				4E729D9F26B7AEE000036056 /* ex_Image.swift in Sources */,
@@ -483,7 +524,10 @@
 				4E0B59D826B7C2FE00639D36 /* HomeLogSign.swift in Sources */,
 				4E10A52926B91B7400504746 /* MessageRowView.swift in Sources */,
 				4E95762E26B907C700A0D8D1 /* NotfyRowView.swift in Sources */,
+				4EF4848D26B930D8006747AD /* HomeChatViewModel.swift in Sources */,
+				4EF4848B26B930B9006747AD /* HomeChat.swift in Sources */,
 				4EC721C426B7E63400AA6B37 /* LoadingCircleGradual.swift in Sources */,
+				4EF4849426B932C4006747AD /* BubbleArrow.swift in Sources */,
 				4E729D9726B7AE7D00036056 /* HomeWelcome.swift in Sources */,
 				4EC721C526B7E63400AA6B37 /* LoadingCircleFlip.swift in Sources */,
 				4E52ED5026B807BE004E0881 /* HomeSettings.swift in Sources */,
