@@ -9,6 +9,10 @@ import SwiftUI
 
 struct HomeFilter: View {
     @StateObject var vm = HomeFilterViewModel()
+    @State var width:CGFloat = 0
+    @State var width1:CGFloat = 15
+    @StateObject var slider = CustomSlider(start: 200, end: 200000)
+    @StateObject var Spaceslider = CustomSlider(start: 100, end: 20000)
     
     var body: some View {
         ZStack {
@@ -66,6 +70,25 @@ struct HomeFilter: View {
                                 .fontWeight(.bold)
                                 .foregroundColor(Color.black.opacity(0.6))
                                 .frame(maxWidth:.infinity,alignment: .leading)
+                                .padding(.bottom,30)
+                            
+                            //Slider
+                            SSliderView(slider: slider)
+                            
+                            
+                            HStack{
+                                
+                                Text("\(Int(slider.lowHandle.currentValue)) EGY")
+                                    .font(.system(size: 11))
+                                    .foregroundColor(Color.black.opacity(0.6))
+                                Spacer()
+                                
+                                Text("\(Int(slider.highHandle.currentValue)) EGY")
+                                    .font(.system(size: 11))
+                                    .foregroundColor(Color.black.opacity(0.6))
+                                
+                            }
+                            .padding(.vertical)
                             
                             Divider()
                             
@@ -77,7 +100,25 @@ struct HomeFilter: View {
                                 .fontWeight(.bold)
                                 .foregroundColor(Color.black.opacity(0.6))
                                 .frame(maxWidth:.infinity,alignment: .leading)
+                                .padding(.bottom,30)
                             
+                            //Slider
+                            SSliderView(slider: Spaceslider)
+                            
+                            
+                            HStack{
+                                
+                                Text("\(Int(Spaceslider.lowHandle.currentValue)) M")
+                                    .font(.system(size: 11))
+                                    .foregroundColor(Color.black.opacity(0.6))
+                                Spacer()
+                                
+                                Text("\(Int(Spaceslider.highHandle.currentValue)) M")
+                                    .font(.system(size: 11))
+                                    .foregroundColor(Color.black.opacity(0.6))
+                                
+                            }
+                            .padding(.vertical)
                             
                         }
                         
@@ -94,6 +135,8 @@ struct HomeFilter: View {
                                 )
                         })
                         .frame(height:50)
+                        //                        .padding(.bottom,20)
+                        Spacer()
                         
                     }
                     .padding(.horizontal,24)
@@ -123,6 +166,35 @@ struct HomeFilter: View {
         .navigationBarHidden(true)
         .navigationBarBackButtonHidden(true)
     }
+    
+    //    func onChange(value:DragGesture.Value)  {
+    //        if value.location.x >= 0 && value.location.x <= vm.maxPrice {
+    //            self.vm.minPrice=value.location.x
+    //        }
+    //    }
+    //
+    //    func secondOnChange(value:DragGesture.Value)  {
+    //        if value.location.x <= totalWidth && value.location.x >= vm.minPrice {
+    //            self.vm.maxPrice=value.location.x
+    //        }
+    //    }
+    
+    func onChange(value:DragGesture.Value)  {
+        if value.location.x >= 0 && value.location.x <= width1 {
+            self.width=value.location.x
+            print(width)
+        }
+    }
+    
+    func secondOnChange(value:DragGesture.Value)  {
+        if value.location.x <= totalWidth && value.location.x >= width {
+            self.width1=value.location.x
+            print(width1)
+            
+        }
+    }
+    var totalWidth:CGFloat = UIScreen.main.bounds.width-48
+    
 }
 
 struct HomeFilter_Previews: PreviewProvider {

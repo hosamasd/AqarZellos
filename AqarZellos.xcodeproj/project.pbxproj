@@ -25,6 +25,9 @@
 		4E10A52726B91AA500504746 /* MessageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E10A52626B91AA500504746 /* MessageModel.swift */; };
 		4E10A52926B91B7400504746 /* MessageRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E10A52826B91B7400504746 /* MessageRowView.swift */; };
 		4E10A52B26B91B9A00504746 /* HomeMessagesTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E10A52A26B91B9A00504746 /* HomeMessagesTopView.swift */; };
+		4E2B169726BA5DF800CE0708 /* SliderValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2B169626BA5DF800CE0708 /* SliderValue.swift */; };
+		4E2B169926BA5E8900CE0708 /* SliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2B169826BA5E8900CE0708 /* SliderView.swift */; };
+		4E2B169B26BA5F8500CE0708 /* SSliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2B169A26BA5F8500CE0708 /* SSliderView.swift */; };
 		4E52ED4426B80205004E0881 /* HomeFavorites.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E52ED4326B80205004E0881 /* HomeFavorites.swift */; };
 		4E52ED4626B80262004E0881 /* HomeFavoritesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E52ED4526B80262004E0881 /* HomeFavoritesViewModel.swift */; };
 		4E52ED4826B80287004E0881 /* FavoriteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E52ED4726B80287004E0881 /* FavoriteModel.swift */; };
@@ -108,6 +111,9 @@
 		4E10A52626B91AA500504746 /* MessageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageModel.swift; sourceTree = "<group>"; };
 		4E10A52826B91B7400504746 /* MessageRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageRowView.swift; sourceTree = "<group>"; };
 		4E10A52A26B91B9A00504746 /* HomeMessagesTopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMessagesTopView.swift; sourceTree = "<group>"; };
+		4E2B169626BA5DF800CE0708 /* SliderValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderValue.swift; sourceTree = "<group>"; };
+		4E2B169826BA5E8900CE0708 /* SliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderView.swift; sourceTree = "<group>"; };
+		4E2B169A26BA5F8500CE0708 /* SSliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSliderView.swift; sourceTree = "<group>"; };
 		4E52ED4326B80205004E0881 /* HomeFavorites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFavorites.swift; sourceTree = "<group>"; };
 		4E52ED4526B80262004E0881 /* HomeFavoritesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFavoritesViewModel.swift; sourceTree = "<group>"; };
 		4E52ED4726B80287004E0881 /* FavoriteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteModel.swift; sourceTree = "<group>"; };
@@ -248,6 +254,7 @@
 		4E0B59DC26B7C42300639D36 /* custom */ = {
 			isa = PBXGroup;
 			children = (
+				4E2B169526BA5DED00CE0708 /* range slider */,
 				4EBDD35D26BA4B310094DB44 /* dropdown */,
 				4EC721BB26B7E5E700AA6B37 /* loodingview */,
 				4E0B59DD26B7C43C00639D36 /* TFWithBorder.swift */,
@@ -279,6 +286,16 @@
 				4E10A52226B91A6000504746 /* HomeMessages.swift */,
 			);
 			path = Messages;
+			sourceTree = "<group>";
+		};
+		4E2B169526BA5DED00CE0708 /* range slider */ = {
+			isa = PBXGroup;
+			children = (
+				4E2B169626BA5DF800CE0708 /* SliderValue.swift */,
+				4E2B169826BA5E8900CE0708 /* SliderView.swift */,
+				4E2B169A26BA5F8500CE0708 /* SSliderView.swift */,
+			);
+			path = "range slider";
 			sourceTree = "<group>";
 		};
 		4E52ED4126B801E7004E0881 /* favorites */ = {
@@ -671,6 +688,7 @@
 				4E729DA126B7AF0600036056 /* AppDelegate.swift in Sources */,
 				4EB65B1926B965C600B93DBF /* ProfileImgCoverRowView.swift in Sources */,
 				4E0B59DB26B7C32900639D36 /* HomeLogSignViewModel.swift in Sources */,
+				4E2B169926BA5E8900CE0708 /* SliderView.swift in Sources */,
 				4E063B8B26B98C00008BCDA7 /* HomeShowProfilePosts.swift in Sources */,
 				4E729D9B26B7AEBC00036056 /* hideKeyboard.swift in Sources */,
 				4EBDD36126BA4B3E0094DB44 /* DropdownButton.swift in Sources */,
@@ -680,6 +698,7 @@
 				4EF4848F26B93152006747AD /* HomeChatTopView.swift in Sources */,
 				4E52ED5826B80B8A004E0881 /* CustomCorners.swift in Sources */,
 				4E95762C26B9074900A0D8D1 /* NotifyModek.swift in Sources */,
+				4E2B169B26BA5F8500CE0708 /* SSliderView.swift in Sources */,
 				4E10A52B26B91B9A00504746 /* HomeMessagesTopView.swift in Sources */,
 				4EBDD35A26BA4A070094DB44 /* HomeFilter.swift in Sources */,
 				4EB65B1426B9645900B93DBF /* HomeEditTopView.swift in Sources */,
@@ -692,6 +711,7 @@
 				4E10A52326B91A6000504746 /* HomeMessages.swift in Sources */,
 				4EBDD36326BA4B3E0094DB44 /* SampleDropDown.swift in Sources */,
 				4E10A51E26B9149000504746 /* HomePost.swift in Sources */,
+				4E2B169726BA5DF800CE0708 /* SliderValue.swift in Sources */,
 				4EBDD36226BA4B3E0094DB44 /* DropDownGroup.swift in Sources */,
 				4E52ED5426B8088F004E0881 /* HomeSettingsRowView.swift in Sources */,
 				4EF4849226B9320D006747AD /* ChatBubble.swift in Sources */,
