@@ -53,6 +53,6 @@ struct AddMinusView: View {
 
 struct AddMinusView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeFilter()
+        HomeFilter(vm: HomeFilterViewModel(), show: .constant(false))
     }
 }

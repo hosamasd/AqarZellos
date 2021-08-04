@@ -9,12 +9,13 @@ import SwiftUI
 
 struct HomeFilterTopView: View {
     @Environment(\.presentationMode) var presentationMode
+    @Binding var show:Bool
 
     var body: some View {
         HStack {
             
             Button(action: {withAnimation{
-              
+                show.toggle()
                     presentationMode.wrappedValue.dismiss()
             }}, label: {
                 Image(systemName: "chevron.backward")
@@ -38,6 +39,6 @@ struct HomeFilterTopView: View {
 
 struct HomeFilterTopView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeFilterTopView()
+        HomeFilterTopView(show: .constant(false))
     }
 }

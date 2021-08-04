@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct HomeSettings: View {
+    @Binding var show:Bool
+    
     var body: some View {
         ZStack {
             
@@ -19,7 +21,7 @@ struct HomeSettings: View {
             
             VStack {
                 
-                HomeSettingsTopView()
+                HomeSettingsTopView(show: $show)
                     .padding(.horizontal,24)
                 
                 ScrollView(isSmallDevice() ? .vertical : .init()) {
@@ -114,6 +116,6 @@ struct HomeSettings: View {
 
 struct HomeSettings_Previews: PreviewProvider {
     static var previews: some View {
-        HomeSettings()
+        HomeSettings(show: .constant(false))
     }
 }

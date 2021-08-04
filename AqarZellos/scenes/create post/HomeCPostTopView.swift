@@ -1,14 +1,13 @@
 //
-//  HomeSettingsTopView.swift
+//  HomeCPostTopView.swift
 //  AqarZellos
 //
-//  Created by hosam on 02/08/2021.
+//  Created by hosam on 04/08/2021.
 //
 
 import SwiftUI
 
-struct HomeSettingsTopView: View {
-    @Environment(\.presentationMode) var presentationMode
+struct HomeCPostTopView: View {
     @Binding var show:Bool
 
     var body: some View {
@@ -16,7 +15,7 @@ struct HomeSettingsTopView: View {
             
             Button(action: {withAnimation{
                 show.toggle()
-                    presentationMode.wrappedValue.dismiss()
+//                    presentationMode.wrappedValue.dismiss()
             }}, label: {
                 Image(systemName: "chevron.backward")
                     .foregroundColor(.white)
@@ -26,17 +25,18 @@ struct HomeSettingsTopView: View {
             
             Spacer()
             
-            Text("Settings")
+            Text("Creat post")
                 .foregroundColor(.white)
                 .font(.system(size: 18))
                 .fontWeight(.bold)
             
             Spacer()
-        }    }
+        }
+    }
 }
 
-struct HomeSettingsTopView_Previews: PreviewProvider {
+struct HomeCPostTopView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeSettingsTopView( show: .constant(false))
+        HomeCPostTopView(show: .constant(false))
     }
 }

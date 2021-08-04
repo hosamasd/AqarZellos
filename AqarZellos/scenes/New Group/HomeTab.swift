@@ -13,38 +13,23 @@ struct HomeTab: View {
     var body: some View {
         ZStack(alignment: Alignment(horizontal: .center, vertical: .bottom), content: {
             
-            //            if vm.isLoadingState {
-            //
-            //                Indicator()
-            //
-            //            }
-            //            else {
-            
-            //            NavigationView{
             if index == 0 {
-                Color.black
-                //                SSecondMainHome()
-                //                    //                    SecondMainHome()
-                //                    .environmentObject(vm)
-                //                    .environmentObject(vmm)
+                MainHome()
             }
             else if index == 1   {
-                Color.blue
+                HomePost()
                 
             }
-            else {
-                Color.orange
+            else if index == 2   {
+
+                HomeFavorites()
+            }            else {
+               Homenotifications()
             }
             
         MyTab(index: $index)
             
-            
-//            if isHideTabBar {
-//                Color.green
-//
-//            }
         })
-        //        .environmentObject(vm)
         .edgesIgnoringSafeArea(.all)        //        )
     }    }
 

@@ -9,7 +9,7 @@ import SwiftUI
 
 struct HomeSettingsRowView: View {
     var title = "Log in"
-    var img = "manUser"
+    var img = "jackFinniganRriAi0NhcbcUnsplash"
     var color = "logs"
     var isFirst = false
     var isNotify = false
@@ -22,7 +22,9 @@ struct HomeSettingsRowView: View {
                     .fill(Color(color))
                     .overlay(
                         Image(img)
-                        
+                            .resizable()
+                            .frame(width: 28, height: 28)
+
                     )
                     .frame(width: 32, height: 32)
                 

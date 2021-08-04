@@ -54,6 +54,11 @@
 		4E95763126B9092300A0D8D1 /* HomenotificationsTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E95763026B9092300A0D8D1 /* HomenotificationsTopView.swift */; };
 		4EAE7CD126BA79D800500DE2 /* HomeTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EAE7CD026BA79D800500DE2 /* HomeTab.swift */; };
 		4EAE7CD326BA7AE000500DE2 /* MyTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EAE7CD226BA7AE000500DE2 /* MyTab.swift */; };
+		4EB2D7F126BA8C7300D20B19 /* MainHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB2D7F026BA8C7300D20B19 /* MainHome.swift */; };
+		4EB2D7F326BA8CB400D20B19 /* MainHomeTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB2D7F226BA8CB400D20B19 /* MainHomeTopView.swift */; };
+		4EB2D7F626BA919F00D20B19 /* HomeCPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB2D7F526BA919F00D20B19 /* HomeCPost.swift */; };
+		4EB2D7F826BA920200D20B19 /* HomeCPostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB2D7F726BA920200D20B19 /* HomeCPostViewModel.swift */; };
+		4EB2D7FA26BA923300D20B19 /* HomeCPostTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB2D7F926BA923300D20B19 /* HomeCPostTopView.swift */; };
 		4EB65B0F26B9640D00B93DBF /* HomeEdit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB65B0E26B9640D00B93DBF /* HomeEdit.swift */; };
 		4EB65B1226B9643200B93DBF /* HomeEditViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB65B1126B9643200B93DBF /* HomeEditViewModel.swift */; };
 		4EB65B1426B9645900B93DBF /* HomeEditTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB65B1326B9645900B93DBF /* HomeEditTopView.swift */; };
@@ -144,6 +149,11 @@
 		4E95763026B9092300A0D8D1 /* HomenotificationsTopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomenotificationsTopView.swift; sourceTree = "<group>"; };
 		4EAE7CD026BA79D800500DE2 /* HomeTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTab.swift; sourceTree = "<group>"; };
 		4EAE7CD226BA7AE000500DE2 /* MyTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTab.swift; sourceTree = "<group>"; };
+		4EB2D7F026BA8C7300D20B19 /* MainHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainHome.swift; sourceTree = "<group>"; };
+		4EB2D7F226BA8CB400D20B19 /* MainHomeTopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainHomeTopView.swift; sourceTree = "<group>"; };
+		4EB2D7F526BA919F00D20B19 /* HomeCPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCPost.swift; sourceTree = "<group>"; };
+		4EB2D7F726BA920200D20B19 /* HomeCPostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCPostViewModel.swift; sourceTree = "<group>"; };
+		4EB2D7F926BA923300D20B19 /* HomeCPostTopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCPostTopView.swift; sourceTree = "<group>"; };
 		4EB65B0E26B9640D00B93DBF /* HomeEdit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeEdit.swift; sourceTree = "<group>"; };
 		4EB65B1126B9643200B93DBF /* HomeEditViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeEditViewModel.swift; sourceTree = "<group>"; };
 		4EB65B1326B9645900B93DBF /* HomeEditTopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeEditTopView.swift; sourceTree = "<group>"; };
@@ -322,9 +332,9 @@
 		4E52ED4D26B807AC004E0881 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
+				4E52ED4F26B807BE004E0881 /* HomeSettings.swift */,
 				4E95762526B906EE00A0D8D1 /* notifications */,
 				4EC4E86726B81DC500832ABF /* help */,
-				4E52ED4F26B807BE004E0881 /* HomeSettings.swift */,
 				4EC4E87026B8205B00832ABF /* contacts */,
 			);
 			path = Settings;
@@ -385,6 +395,8 @@
 		4E729D8F26B7AE4200036056 /* scenes */ = {
 			isa = PBXGroup;
 			children = (
+				4EB2D7F426BA919100D20B19 /* create post */,
+				4EB2D7EF26BA8C6A00D20B19 /* Home */,
 				4EAE7CCF26BA79CB00500DE2 /* tab */,
 				4EBDD35726BA49F40094DB44 /* filter */,
 				4EB65B0D26B9640300B93DBF /* profile */,
@@ -435,6 +447,7 @@
 				4E10A52426B91A8400504746 /* HomeMessagesViewModel.swift */,
 				4EF4848C26B930D8006747AD /* HomeChatViewModel.swift */,
 				4EBDD36426BA4BBF0094DB44 /* HomeFilterViewModel.swift */,
+				4EB2D7F726BA920200D20B19 /* HomeCPostViewModel.swift */,
 			);
 			path = wiewmodel;
 			sourceTree = "<group>";
@@ -502,6 +515,24 @@
 			);
 			name = tab;
 			path = "New Group";
+			sourceTree = "<group>";
+		};
+		4EB2D7EF26BA8C6A00D20B19 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				4EB2D7F026BA8C7300D20B19 /* MainHome.swift */,
+				4EB2D7F226BA8CB400D20B19 /* MainHomeTopView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		4EB2D7F426BA919100D20B19 /* create post */ = {
+			isa = PBXGroup;
+			children = (
+				4EB2D7F526BA919F00D20B19 /* HomeCPost.swift */,
+				4EB2D7F926BA923300D20B19 /* HomeCPostTopView.swift */,
+			);
+			path = "create post";
 			sourceTree = "<group>";
 		};
 		4EB65B0D26B9640300B93DBF /* profile */ = {
@@ -705,6 +736,7 @@
 				4E0B59DB26B7C32900639D36 /* HomeLogSignViewModel.swift in Sources */,
 				4E2B169926BA5E8900CE0708 /* SliderView.swift in Sources */,
 				4E063B8B26B98C00008BCDA7 /* HomeShowProfilePosts.swift in Sources */,
+				4EB2D7F126BA8C7300D20B19 /* MainHome.swift in Sources */,
 				4E729D9B26B7AEBC00036056 /* hideKeyboard.swift in Sources */,
 				4EBDD36126BA4B3E0094DB44 /* DropdownButton.swift in Sources */,
 				4EC721BA26B7E2ED00AA6B37 /* ForgetView.swift in Sources */,
@@ -717,6 +749,7 @@
 				4E10A52B26B91B9A00504746 /* HomeMessagesTopView.swift in Sources */,
 				4EBDD35A26BA4A070094DB44 /* HomeFilter.swift in Sources */,
 				4EB65B1426B9645900B93DBF /* HomeEditTopView.swift in Sources */,
+				4EB2D7F326BA8CB400D20B19 /* MainHomeTopView.swift in Sources */,
 				4EC721C626B7E63400AA6B37 /* LoadingView.swift in Sources */,
 				4E063B8826B985BF008BCDA7 /* HomeShowProfileViewModel.swift in Sources */,
 				4EC721C926B7E63400AA6B37 /* LoadingCircleOpacity.swift in Sources */,
@@ -725,6 +758,7 @@
 				4E063B8D26B98C92008BCDA7 /* PostModel.swift in Sources */,
 				4E10A52326B91A6000504746 /* HomeMessages.swift in Sources */,
 				4EBDD36326BA4B3E0094DB44 /* SampleDropDown.swift in Sources */,
+				4EB2D7FA26BA923300D20B19 /* HomeCPostTopView.swift in Sources */,
 				4E10A51E26B9149000504746 /* HomePost.swift in Sources */,
 				4E2B169726BA5DF800CE0708 /* SliderValue.swift in Sources */,
 				4EBDD36226BA4B3E0094DB44 /* DropDownGroup.swift in Sources */,
@@ -736,6 +770,7 @@
 				4E0B59DE26B7C43C00639D36 /* TFWithBorder.swift in Sources */,
 				4EC4E86F26B8204F00832ABF /* HomeContactUsTopView.swift in Sources */,
 				4EC4E86D26B8200C00832ABF /* HomeContactUs.swift in Sources */,
+				4EB2D7F626BA919F00D20B19 /* HomeCPost.swift in Sources */,
 				4EF1CAEA26B956F6007A9DC6 /* SHomeChat.swift in Sources */,
 				4E0B59E026B7C9E600639D36 /* LoginView.swift in Sources */,
 				4E063B8426B98537008BCDA7 /* HomeShowProfile.swift in Sources */,
@@ -767,6 +802,7 @@
 				4E729D8126B7AE3900036056 /* AqarZellosApp.swift in Sources */,
 				4EAE7CD126BA79D800500DE2 /* HomeTab.swift in Sources */,
 				4E52ED4A26B8037C004E0881 /* HomeFavoritesTopView.swift in Sources */,
+				4EB2D7F826BA920200D20B19 /* HomeCPostViewModel.swift in Sources */,
 				4E52ED4826B80287004E0881 /* FavoriteModel.swift in Sources */,
 				4EC4E86926B81DD000832ABF /* HomeHelp.swift in Sources */,
 				4E52ED4C26B804AC004E0881 /* FavRowView.swift in Sources */,

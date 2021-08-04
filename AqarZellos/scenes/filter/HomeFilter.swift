@@ -8,9 +8,10 @@
 import SwiftUI
 
 struct HomeFilter: View {
-    @StateObject var vm = HomeFilterViewModel()
+    @ObservedObject var vm : HomeFilterViewModel
     @StateObject var slider = CustomSlider(start: 200, end: 200000)
     @StateObject var Spaceslider = CustomSlider(start: 100, end: 20000)
+    @Binding var show:Bool
     
     var body: some View {
         ZStack {
@@ -23,7 +24,7 @@ struct HomeFilter: View {
             
             VStack {
                 
-                HomeFilterTopView()
+                HomeFilterTopView(show: $show)
                     .padding(.horizontal,24)
                 
                 ScrollView(.vertical, showsIndicators: false) {
@@ -170,6 +171,6 @@ struct HomeFilter: View {
 
 struct HomeFilter_Previews: PreviewProvider {
     static var previews: some View {
-        HomeFilter()
+        HomeFilter(vm: HomeFilterViewModel(), show: .constant(false))
     }
 }
