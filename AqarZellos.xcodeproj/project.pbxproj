@@ -56,6 +56,14 @@
 		4EB65B1926B965C600B93DBF /* ProfileImgCoverRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB65B1826B965C600B93DBF /* ProfileImgCoverRowView.swift */; };
 		4EB65B1B26B9663000B93DBF /* ProfileMainRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB65B1A26B9663000B93DBF /* ProfileMainRowView.swift */; };
 		4EB65B1D26B96B9700B93DBF /* SUImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB65B1C26B96B9700B93DBF /* SUImagePickerView.swift */; };
+		4EBDD35A26BA4A070094DB44 /* HomeFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBDD35926BA4A070094DB44 /* HomeFilter.swift */; };
+		4EBDD35C26BA4A540094DB44 /* HomeFilterTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBDD35B26BA4A540094DB44 /* HomeFilterTopView.swift */; };
+		4EBDD36126BA4B3E0094DB44 /* DropdownButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBDD35E26BA4B3E0094DB44 /* DropdownButton.swift */; };
+		4EBDD36226BA4B3E0094DB44 /* DropDownGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBDD35F26BA4B3E0094DB44 /* DropDownGroup.swift */; };
+		4EBDD36326BA4B3E0094DB44 /* SampleDropDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBDD36026BA4B3E0094DB44 /* SampleDropDown.swift */; };
+		4EBDD36526BA4BBF0094DB44 /* HomeFilterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBDD36426BA4BBF0094DB44 /* HomeFilterViewModel.swift */; };
+		4EBDD36726BA4BDD0094DB44 /* viewModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBDD36626BA4BDD0094DB44 /* viewModifiers.swift */; };
+		4EBDD36926BA4DAD0094DB44 /* AddMinusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBDD36826BA4DAD0094DB44 /* AddMinusView.swift */; };
 		4EC4E86926B81DD000832ABF /* HomeHelp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC4E86826B81DD000832ABF /* HomeHelp.swift */; };
 		4EC4E86B26B81DFC00832ABF /* HomeHelpTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC4E86A26B81DFC00832ABF /* HomeHelpTopView.swift */; };
 		4EC4E86D26B8200C00832ABF /* HomeContactUs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC4E86C26B8200C00832ABF /* HomeContactUs.swift */; };
@@ -133,6 +141,14 @@
 		4EB65B1826B965C600B93DBF /* ProfileImgCoverRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileImgCoverRowView.swift; sourceTree = "<group>"; };
 		4EB65B1A26B9663000B93DBF /* ProfileMainRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileMainRowView.swift; sourceTree = "<group>"; };
 		4EB65B1C26B96B9700B93DBF /* SUImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SUImagePickerView.swift; sourceTree = "<group>"; };
+		4EBDD35926BA4A070094DB44 /* HomeFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFilter.swift; sourceTree = "<group>"; };
+		4EBDD35B26BA4A540094DB44 /* HomeFilterTopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFilterTopView.swift; sourceTree = "<group>"; };
+		4EBDD35E26BA4B3E0094DB44 /* DropdownButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropdownButton.swift; sourceTree = "<group>"; };
+		4EBDD35F26BA4B3E0094DB44 /* DropDownGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropDownGroup.swift; sourceTree = "<group>"; };
+		4EBDD36026BA4B3E0094DB44 /* SampleDropDown.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleDropDown.swift; sourceTree = "<group>"; };
+		4EBDD36426BA4BBF0094DB44 /* HomeFilterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFilterViewModel.swift; sourceTree = "<group>"; };
+		4EBDD36626BA4BDD0094DB44 /* viewModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewModifiers.swift; sourceTree = "<group>"; };
+		4EBDD36826BA4DAD0094DB44 /* AddMinusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMinusView.swift; sourceTree = "<group>"; };
 		4EC4E86826B81DD000832ABF /* HomeHelp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHelp.swift; sourceTree = "<group>"; };
 		4EC4E86A26B81DFC00832ABF /* HomeHelpTopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHelpTopView.swift; sourceTree = "<group>"; };
 		4EC4E86C26B8200C00832ABF /* HomeContactUs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeContactUs.swift; sourceTree = "<group>"; };
@@ -232,9 +248,11 @@
 		4E0B59DC26B7C42300639D36 /* custom */ = {
 			isa = PBXGroup;
 			children = (
+				4EBDD35D26BA4B310094DB44 /* dropdown */,
 				4EC721BB26B7E5E700AA6B37 /* loodingview */,
 				4E0B59DD26B7C43C00639D36 /* TFWithBorder.swift */,
 				4E52ED5726B80B8A004E0881 /* CustomCorners.swift */,
+				4EBDD36626BA4BDD0094DB44 /* viewModifiers.swift */,
 			);
 			path = custom;
 			sourceTree = "<group>";
@@ -346,6 +364,7 @@
 		4E729D8F26B7AE4200036056 /* scenes */ = {
 			isa = PBXGroup;
 			children = (
+				4EBDD35726BA49F40094DB44 /* filter */,
 				4EB65B0D26B9640300B93DBF /* profile */,
 				4EF4848926B930AE006747AD /* chat */,
 				4E10A52126B91A5600504746 /* Messages */,
@@ -361,6 +380,7 @@
 		4E729D9026B7AE4900036056 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				4EBDD35826BA49FB0094DB44 /* filter */,
 				4EB65B1526B964BA00B93DBF /* profile */,
 				4EF4849026B93208006747AD /* chat */,
 				4EF4848826B930A5006747AD /* Messages */,
@@ -392,6 +412,7 @@
 				4E95762926B9072D00A0D8D1 /* HomenotificationsViewModel.swift */,
 				4E10A52426B91A8400504746 /* HomeMessagesViewModel.swift */,
 				4EF4848C26B930D8006747AD /* HomeChatViewModel.swift */,
+				4EBDD36426BA4BBF0094DB44 /* HomeFilterViewModel.swift */,
 			);
 			path = wiewmodel;
 			sourceTree = "<group>";
@@ -478,6 +499,33 @@
 				4EB65B1326B9645900B93DBF /* HomeEditTopView.swift */,
 			);
 			path = profile;
+			sourceTree = "<group>";
+		};
+		4EBDD35726BA49F40094DB44 /* filter */ = {
+			isa = PBXGroup;
+			children = (
+				4EBDD35926BA4A070094DB44 /* HomeFilter.swift */,
+				4EBDD35B26BA4A540094DB44 /* HomeFilterTopView.swift */,
+			);
+			path = filter;
+			sourceTree = "<group>";
+		};
+		4EBDD35826BA49FB0094DB44 /* filter */ = {
+			isa = PBXGroup;
+			children = (
+				4EBDD36826BA4DAD0094DB44 /* AddMinusView.swift */,
+			);
+			path = filter;
+			sourceTree = "<group>";
+		};
+		4EBDD35D26BA4B310094DB44 /* dropdown */ = {
+			isa = PBXGroup;
+			children = (
+				4EBDD35E26BA4B3E0094DB44 /* DropdownButton.swift */,
+				4EBDD35F26BA4B3E0094DB44 /* DropDownGroup.swift */,
+				4EBDD36026BA4B3E0094DB44 /* SampleDropDown.swift */,
+			);
+			path = dropdown;
 			sourceTree = "<group>";
 		};
 		4EC4E86726B81DC500832ABF /* help */ = {
@@ -617,6 +665,7 @@
 				4E063B8F26B98CF4008BCDA7 /* PostRowView.swift in Sources */,
 				4EC721C826B7E63400AA6B37 /* LoadingCircleColors.swift in Sources */,
 				4EC4E86B26B81DFC00832ABF /* HomeHelpTopView.swift in Sources */,
+				4EBDD36526BA4BBF0094DB44 /* HomeFilterViewModel.swift in Sources */,
 				4E95763126B9092300A0D8D1 /* HomenotificationsTopView.swift in Sources */,
 				4E10A52526B91A8400504746 /* HomeMessagesViewModel.swift in Sources */,
 				4E729DA126B7AF0600036056 /* AppDelegate.swift in Sources */,
@@ -624,6 +673,7 @@
 				4E0B59DB26B7C32900639D36 /* HomeLogSignViewModel.swift in Sources */,
 				4E063B8B26B98C00008BCDA7 /* HomeShowProfilePosts.swift in Sources */,
 				4E729D9B26B7AEBC00036056 /* hideKeyboard.swift in Sources */,
+				4EBDD36126BA4B3E0094DB44 /* DropdownButton.swift in Sources */,
 				4EC721BA26B7E2ED00AA6B37 /* ForgetView.swift in Sources */,
 				4E063B9226B98FB6008BCDA7 /* ProfileDetailsView.swift in Sources */,
 				4E10A52026B914D500504746 /* HomePostTopView.swift in Sources */,
@@ -631,6 +681,7 @@
 				4E52ED5826B80B8A004E0881 /* CustomCorners.swift in Sources */,
 				4E95762C26B9074900A0D8D1 /* NotifyModek.swift in Sources */,
 				4E10A52B26B91B9A00504746 /* HomeMessagesTopView.swift in Sources */,
+				4EBDD35A26BA4A070094DB44 /* HomeFilter.swift in Sources */,
 				4EB65B1426B9645900B93DBF /* HomeEditTopView.swift in Sources */,
 				4EC721C626B7E63400AA6B37 /* LoadingView.swift in Sources */,
 				4E063B8826B985BF008BCDA7 /* HomeShowProfileViewModel.swift in Sources */,
@@ -639,7 +690,9 @@
 				4E95762826B9070A00A0D8D1 /* Homenotifications.swift in Sources */,
 				4E063B8D26B98C92008BCDA7 /* PostModel.swift in Sources */,
 				4E10A52326B91A6000504746 /* HomeMessages.swift in Sources */,
+				4EBDD36326BA4B3E0094DB44 /* SampleDropDown.swift in Sources */,
 				4E10A51E26B9149000504746 /* HomePost.swift in Sources */,
+				4EBDD36226BA4B3E0094DB44 /* DropDownGroup.swift in Sources */,
 				4E52ED5426B8088F004E0881 /* HomeSettingsRowView.swift in Sources */,
 				4EF4849226B9320D006747AD /* ChatBubble.swift in Sources */,
 				4E95762A26B9072D00A0D8D1 /* HomenotificationsViewModel.swift in Sources */,
@@ -684,6 +737,9 @@
 				4E729D9926B7AEAA00036056 /* Extensions_ui.swift in Sources */,
 				4EB65B1B26B9663000B93DBF /* ProfileMainRowView.swift in Sources */,
 				4E52ED4626B80262004E0881 /* HomeFavoritesViewModel.swift in Sources */,
+				4EBDD35C26BA4A540094DB44 /* HomeFilterTopView.swift in Sources */,
+				4EBDD36726BA4BDD0094DB44 /* viewModifiers.swift in Sources */,
+				4EBDD36926BA4DAD0094DB44 /* AddMinusView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
