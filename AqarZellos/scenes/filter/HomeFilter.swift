@@ -9,8 +9,6 @@ import SwiftUI
 
 struct HomeFilter: View {
     @StateObject var vm = HomeFilterViewModel()
-    @State var width:CGFloat = 0
-    @State var width1:CGFloat = 15
     @StateObject var slider = CustomSlider(start: 200, end: 200000)
     @StateObject var Spaceslider = CustomSlider(start: 100, end: 20000)
     
@@ -167,33 +165,6 @@ struct HomeFilter: View {
         .navigationBarBackButtonHidden(true)
     }
     
-    //    func onChange(value:DragGesture.Value)  {
-    //        if value.location.x >= 0 && value.location.x <= vm.maxPrice {
-    //            self.vm.minPrice=value.location.x
-    //        }
-    //    }
-    //
-    //    func secondOnChange(value:DragGesture.Value)  {
-    //        if value.location.x <= totalWidth && value.location.x >= vm.minPrice {
-    //            self.vm.maxPrice=value.location.x
-    //        }
-    //    }
-    
-    func onChange(value:DragGesture.Value)  {
-        if value.location.x >= 0 && value.location.x <= width1 {
-            self.width=value.location.x
-            print(width)
-        }
-    }
-    
-    func secondOnChange(value:DragGesture.Value)  {
-        if value.location.x <= totalWidth && value.location.x >= width {
-            self.width1=value.location.x
-            print(width1)
-            
-        }
-    }
-    var totalWidth:CGFloat = UIScreen.main.bounds.width-48
     
 }
 

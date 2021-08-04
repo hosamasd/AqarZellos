@@ -52,6 +52,8 @@
 		4E95762C26B9074900A0D8D1 /* NotifyModek.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E95762B26B9074900A0D8D1 /* NotifyModek.swift */; };
 		4E95762E26B907C700A0D8D1 /* NotfyRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E95762D26B907C700A0D8D1 /* NotfyRowView.swift */; };
 		4E95763126B9092300A0D8D1 /* HomenotificationsTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E95763026B9092300A0D8D1 /* HomenotificationsTopView.swift */; };
+		4EAE7CD126BA79D800500DE2 /* HomeTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EAE7CD026BA79D800500DE2 /* HomeTab.swift */; };
+		4EAE7CD326BA7AE000500DE2 /* MyTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EAE7CD226BA7AE000500DE2 /* MyTab.swift */; };
 		4EB65B0F26B9640D00B93DBF /* HomeEdit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB65B0E26B9640D00B93DBF /* HomeEdit.swift */; };
 		4EB65B1226B9643200B93DBF /* HomeEditViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB65B1126B9643200B93DBF /* HomeEditViewModel.swift */; };
 		4EB65B1426B9645900B93DBF /* HomeEditTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB65B1326B9645900B93DBF /* HomeEditTopView.swift */; };
@@ -140,6 +142,8 @@
 		4E95762B26B9074900A0D8D1 /* NotifyModek.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotifyModek.swift; sourceTree = "<group>"; };
 		4E95762D26B907C700A0D8D1 /* NotfyRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotfyRowView.swift; sourceTree = "<group>"; };
 		4E95763026B9092300A0D8D1 /* HomenotificationsTopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomenotificationsTopView.swift; sourceTree = "<group>"; };
+		4EAE7CD026BA79D800500DE2 /* HomeTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTab.swift; sourceTree = "<group>"; };
+		4EAE7CD226BA7AE000500DE2 /* MyTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTab.swift; sourceTree = "<group>"; };
 		4EB65B0E26B9640D00B93DBF /* HomeEdit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeEdit.swift; sourceTree = "<group>"; };
 		4EB65B1126B9643200B93DBF /* HomeEditViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeEditViewModel.swift; sourceTree = "<group>"; };
 		4EB65B1326B9645900B93DBF /* HomeEditTopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeEditTopView.swift; sourceTree = "<group>"; };
@@ -381,6 +385,7 @@
 		4E729D8F26B7AE4200036056 /* scenes */ = {
 			isa = PBXGroup;
 			children = (
+				4EAE7CCF26BA79CB00500DE2 /* tab */,
 				4EBDD35726BA49F40094DB44 /* filter */,
 				4EB65B0D26B9640300B93DBF /* profile */,
 				4EF4848926B930AE006747AD /* chat */,
@@ -487,6 +492,16 @@
 				4E95763026B9092300A0D8D1 /* HomenotificationsTopView.swift */,
 			);
 			path = notififcation;
+			sourceTree = "<group>";
+		};
+		4EAE7CCF26BA79CB00500DE2 /* tab */ = {
+			isa = PBXGroup;
+			children = (
+				4EAE7CD026BA79D800500DE2 /* HomeTab.swift */,
+				4EAE7CD226BA7AE000500DE2 /* MyTab.swift */,
+			);
+			name = tab;
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 		4EB65B0D26B9640300B93DBF /* profile */ = {
@@ -739,6 +754,7 @@
 				4EF4848D26B930D8006747AD /* HomeChatViewModel.swift in Sources */,
 				4EF4848B26B930B9006747AD /* HomeChat.swift in Sources */,
 				4EC721C426B7E63400AA6B37 /* LoadingCircleGradual.swift in Sources */,
+				4EAE7CD326BA7AE000500DE2 /* MyTab.swift in Sources */,
 				4EF4849426B932C4006747AD /* BubbleArrow.swift in Sources */,
 				4EB65B0F26B9640D00B93DBF /* HomeEdit.swift in Sources */,
 				4E729D9726B7AE7D00036056 /* HomeWelcome.swift in Sources */,
@@ -749,6 +765,7 @@
 				4E52ED4426B80205004E0881 /* HomeFavorites.swift in Sources */,
 				4EB65B1D26B96B9700B93DBF /* SUImagePickerView.swift in Sources */,
 				4E729D8126B7AE3900036056 /* AqarZellosApp.swift in Sources */,
+				4EAE7CD126BA79D800500DE2 /* HomeTab.swift in Sources */,
 				4E52ED4A26B8037C004E0881 /* HomeFavoritesTopView.swift in Sources */,
 				4E52ED4826B80287004E0881 /* FavoriteModel.swift in Sources */,
 				4EC4E86926B81DD000832ABF /* HomeHelp.swift in Sources */,
