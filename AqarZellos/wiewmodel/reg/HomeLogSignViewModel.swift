@@ -44,7 +44,7 @@ class HomeLogSignViewModel: ObservableObject {
     //    }
     
     func checkPhone(p:String) -> Bool {
-        p.count >= 3
+        p.count >= 3 ? false : true
         //        return  p.isValidPhoneNumber ? true : false
     }
     
@@ -90,14 +90,20 @@ class HomeLogSignViewModel: ObservableObject {
     
     func makeSignUp()  {
         
-        if !checkPhone(p: emailSign) {
+        if !checkUserName() {
+            self.alertMsg = "Please type valid Username"
+            self.alert.toggle()
+            return
+        }
+        
+        if checkPhone(p: PhoneSign) {
             self.alertMsg = "Please type valid Phone number"
             self.alert.toggle()
             return
         }
         
-        if !checkUserName() {
-            self.alertMsg = "Please type valid Username"
+        if !emailSign.isValidEmail {
+            self.alertMsg = "Please type valid Phone number"
             self.alert.toggle()
             return
         }
@@ -121,10 +127,10 @@ class HomeLogSignViewModel: ObservableObject {
             self.isLoading.toggle()
         }
         
-        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now()+2) {
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now()+4) {
             withAnimation{self.isLoading.toggle()}
             DispatchQueue.main.async {
-                //                self.isUserLogin.toggle()
+                self.isUserLogin.toggle()
                 
             }
         }
@@ -133,7 +139,7 @@ class HomeLogSignViewModel: ObservableObject {
     
     func makeLogin()  {
         
-        if !checkPhone(p: emailLogin) {
+        if checkPhone(p: emailLogin) {
             self.alertMsg = "Please type valid Phone number"
             self.alert.toggle()
             return
@@ -150,10 +156,10 @@ class HomeLogSignViewModel: ObservableObject {
             self.isLoading.toggle()
         }
         
-        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now()+2) {
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now()+4) {
             withAnimation{self.isLoading.toggle()}
             DispatchQueue.main.async {
-                //                self.isUserLogin.toggle()
+                self.isUserLogin.toggle()
                 
             }
         }
