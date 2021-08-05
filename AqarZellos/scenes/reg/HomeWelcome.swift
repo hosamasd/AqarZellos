@@ -10,7 +10,9 @@ import SwiftUI
 struct HomeWelcome: View {
     
     @State var isShow = false
-    
+    @State var showLocation = false
+    @State var locationText = ""
+
     var body: some View {
         ZStack {
             
@@ -78,7 +80,7 @@ struct HomeWelcome: View {
                         .padding(.horizontal,24)
                         
                         Button(action: {
-                            withAnimation{isShow.toggle()}
+                            withAnimation{showLocation.toggle()}
                         }, label: {
                             
                             
@@ -116,6 +118,10 @@ struct HomeWelcome: View {
                 
             }
             
+        })
+        
+        .fullScreenCover(isPresented: $showLocation, content: {
+            LocationView(dismiss: $showLocation, locationText: $locationText )//enteredLocation: $enteredLocation)
         })
     }
 }

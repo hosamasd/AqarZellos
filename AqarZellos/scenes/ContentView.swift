@@ -8,19 +8,36 @@
 import SwiftUI
 
 struct ContentView: View {
+    @AppStorage("isUserLogin") var isUserLogin: Bool = false
+    
     var body: some View {
         
-        HomeLogSign()
-//        HomeCPost(show: .constant(false))
-//        HomeTab()
         
-//        MainHome()
-//        NavigationView {
-//        HomeSettings()
+//        ZStack {
+//
+//            if isUserLogin {
+//                HomeTab()
+//                    .transition(.move(edge: .bottom))
+//            }
+//            else {
+//                HomeWelcome()
+//            }
 //
 //        }
-
-       
+        
+        
+        //        HomeFavorites()
+        //        HomeCPost(show: .constant(false))
+        //        HomeTab()
+        
+        //        MainHome()
+//                NavigationView {
+                    HomeShowProfile()
+//        HomeSettings(show: .constant(false))
+        //
+//                }
+        
+        
     }
 }
 

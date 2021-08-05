@@ -9,6 +9,7 @@ import SwiftUI
 
 struct HomeSettings: View {
     @Binding var show:Bool
+    @StateObject var vm = HomeSettingsViewModel()
     
     var body: some View {
         ZStack {
@@ -28,20 +29,26 @@ struct HomeSettings: View {
                     
                     VStack {
                         HomeSettingsRowView(isFirst:true)
-                            .padding(.top,20)
+                            .padding(.top,0)
                         
                         Divider()
                             .background(Color.black)
-                        
+                        NavigationLink(destination:
+                                        HomeMessages()
+                        )  {
                         HomeSettingsRowView(title: "Chat", img: "chat1", color: "cha", isFirst: false)
+                        }
                         
                         Text("Profile")
                             .frame(maxWidth:.infinity,alignment: .leading)
                         
                         VStack(spacing:-16) {
+                            NavigationLink(destination:
+                                            HomeShowProfile()
+                            )  {
                             HomeSettingsRowView(title: "Edit Profile", img: "manUser", color: "prof", isFirst: false)
                             
-                            
+                            }
                             HomeSettingsRowView(title: "Change Password", img: "key", color: "pass", isFirst: false)
                             
                         }
@@ -77,11 +84,14 @@ struct HomeSettings: View {
                                 
                                 HomeSettingsRowView(title: "Contact us", img: "contactUs1", color: "contac", isFirst: false)
                                     .foregroundColor(.black)
-
+                                
                                 
                             }
                             
                             HomeSettingsRowView(title: "Log Out", img: "logout", color: "logout", isFirst: false)
+                                .onTapGesture(perform: {
+                                    vm.logOut()
+                                })
                             
                         }
                         
@@ -103,9 +113,9 @@ struct HomeSettings: View {
             
             .padding(.top,40)
             
-            //            if vm.isLoading {
-            //                LoadingCubeOffset()
-            //            }
+                        if vm.isLoading {
+                            LoadingCapsuleSpacing()
+                        }
             
         }
         .navigationBarTitle("")

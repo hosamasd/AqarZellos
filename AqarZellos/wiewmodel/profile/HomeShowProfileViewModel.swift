@@ -17,10 +17,10 @@ class HomeShowProfileViewModel:ObservableObject {
     
     @Published var postsArray:[PostModel] = [
     
-        PostModel(name: "Home", pic: "images1", desc: "10.000 EGY , 150 M"),
-        PostModel(name: "Home", pic: "images1", desc: "10.000 EGY , 150 M"),
-        PostModel(name: "Home", pic: "images1", desc: "10.000 EGY , 150 M"),
-        PostModel(name: "Home", pic: "images1", desc: "10.000 EGY , 150 M"),
+//        PostModel(name: "Home", pic: "images1", desc: "10.000 EGY , 150 M"),
+//        PostModel(name: "Home", pic: "images1", desc: "10.000 EGY , 150 M"),
+//        PostModel(name: "Home", pic: "images1", desc: "10.000 EGY , 150 M"),
+//        PostModel(name: "Home", pic: "images1", desc: "10.000 EGY , 150 M"),
 
     ]
 
@@ -29,5 +29,29 @@ class HomeShowProfileViewModel:ObservableObject {
     @Published var face = "hosam"
     @Published var address = "cairo"
     @Published var website = "hosam.net"
+    
+    init() {
+        getDatas()
+    }
+    
+    func getDatas()  {
+        withAnimation{isLoading.toggle()}
+        
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now()+2) {
+            withAnimation{self.isLoading.toggle()}
+            
+            self.postsArray = [
+            
+            PostModel(name: "Home", pic: "images1", desc: "10.000 EGY , 150 M"),
+            PostModel(name: "Home", pic: "images1", desc: "10.000 EGY , 150 M"),
+            PostModel(name: "Home", pic: "images1", desc: "10.000 EGY , 150 M"),
+            PostModel(name: "Home", pic: "images1", desc: "10.000 EGY , 150 M"),
+
+        ]
+            
+        }
+        
+        
+    }
 }
 

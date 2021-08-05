@@ -25,6 +25,7 @@ struct MessageRowView: View {
                         Text(x.name)
                             .font(.system(size: 16))
                             .fontWeight(.bold)
+                            .foregroundColor(Color.black)
                         
                         Spacer()
                         

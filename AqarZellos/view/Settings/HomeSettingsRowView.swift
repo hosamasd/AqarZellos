@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct HomeSettingsRowView: View {
-    var title = "Log in"
+    var title = "HI, Hosam"
     var img = "jackFinniganRriAi0NhcbcUnsplash"
     var color = "logs"
     var isFirst = false
@@ -20,22 +20,21 @@ struct HomeSettingsRowView: View {
             ZStack {
                 Circle()
                     .fill(Color(color))
+                   
+                    .frame(width: 32, height: 32)
                     .overlay(
                         Image(img)
                             .resizable()
-                            .frame(width: 28, height: 28)
-
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 14, height: 14)
+                        
                     )
-                    .frame(width: 32, height: 32)
                 
                 if isFirst {
-                    Circle()
-                        .fill(Color(color))
-                        .overlay(
-                            Image(img)
-                            
-                        )
-                        .frame(width: 40, height: 40)
+                    
+                    Image(img)
+                        .resizable()
+                        .frame(width: 54, height: 54)
                     
                 }
             }
@@ -44,6 +43,7 @@ struct HomeSettingsRowView: View {
                 .font(.system(size: 18))
                 .fontWeight(.semibold)
                 .padding(.leading)
+                .foregroundColor(Color.black.opacity(0.6))
             
             Spacer()
             
@@ -52,10 +52,11 @@ struct HomeSettingsRowView: View {
                     Image(systemName: "chevron.right")
                         .foregroundColor(.black)
                 })
+                .opacity(isFirst ? 0 : 1)
             }else {
                 Toggle("", isOn: $showGreeting)
                     .toggleStyle(SwitchToggleStyle(tint: .green))
-                    
+                
             }
         }
         .padding()
@@ -64,7 +65,8 @@ struct HomeSettingsRowView: View {
 
 struct HomeSettingsRowView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeSettingsRowView(isNotify:true)
+        ContentView()
+        //        HomeSettingsRowView(isNotify:true)
         
     }
 }

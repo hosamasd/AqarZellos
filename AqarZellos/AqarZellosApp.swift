@@ -15,7 +15,7 @@ struct AqarZellosApp: App {
         WindowGroup {
             ContentView()
                 .onAppear(perform: UIApplication.shared.addTapGestureRecognizer)
-
+//                .preferredColorScheme(.dark) // white tint on status bar
         }
     }
 }

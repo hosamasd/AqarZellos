@@ -40,5 +40,7 @@ class HomeEditViewModel: ObservableObject {
     @Published var address = "cairo"
     @Published var website = "hosam.net"
 
+    
+    
 
 }

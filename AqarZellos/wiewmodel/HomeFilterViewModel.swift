@@ -32,6 +32,12 @@ struct DataS {
 }
 
 class HomeFilterViewModel: ObservableObject {
+    
+    @Published var alert = false
+    @Published var alertMsg = ""
+    @Published var isLoading = false
+    
+    
     @Published var nameDrop = ""
     @Published var typeDrop = ""
     @Published var areaDrop = ""

@@ -13,7 +13,7 @@ class HomeLogSignViewModel: ObservableObject {
     
     @Published var alert = false
     @Published var alertMsg = ""
-    @Published var isLoading = true
+    @Published var isLoading = false
     
     @Published var isLogin=false
     @Published var emailLogin=""

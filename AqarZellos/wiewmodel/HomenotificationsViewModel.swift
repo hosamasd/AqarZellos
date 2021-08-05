@@ -20,10 +20,10 @@ class HomenotificationsViewModel:ObservableObject {
     }
     
     func getDatas()  {
-        //        withAnimation{isLoading.toggle()}
+                withAnimation{isLoading.toggle()}
         
-        //        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now()+0) {
-        //            withAnimation{self.isLoading.toggle()}
+                DispatchQueue.main.asyncAfter(deadline: DispatchTime.now()+2) {
+                    withAnimation{self.isLoading.toggle()}
         
         self.notificationArray = [
             .init(name: "Home", time: "1:48 Hour ago ", pic: "images1",desc: "On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment"),
@@ -38,7 +38,7 @@ class HomenotificationsViewModel:ObservableObject {
             
         ]
         
-        //        }
+                }
         
         
     }

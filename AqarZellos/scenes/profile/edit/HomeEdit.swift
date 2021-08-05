@@ -90,7 +90,7 @@ struct HomeEdit: View {
             .padding(.top,40)
             
             if vm.isLoading {
-                LoadingCubeOffset()
+                LoadingCapsuleSpacing()
             }
             
         }

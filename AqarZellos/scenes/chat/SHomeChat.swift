@@ -179,7 +179,7 @@ struct SHomeChat: View {
 //            .edgesIgnoringSafeArea(.all)
             
             if vm.isLoading {
-                LoadingCubeOffset()
+                LoadingCapsuleSpacing()
             }
             
         }

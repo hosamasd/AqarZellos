@@ -97,10 +97,15 @@ struct HomeShowProfile: View {
                                 .frame( width:260,height: 40)
                                 
                                 Button(action: {}, label: {
-                                    Image("aa")
+                                    
+                                    NavigationLink(destination:
+                                    HomeEdit()
+                                    ) {
+                                        Image("aa")
                                         .resizable()
                                         .frame(width: 40, height: 40)
                                         .clipShape(Circle())
+                                    }
                                 })
                                 
                                 
@@ -127,14 +132,15 @@ struct HomeShowProfile: View {
                                 }
                                 
                             }
+                            .padding(.bottom,40)
                             
                         }
                         .padding(.top,20)
                         //                        .offset(y:80)
                         
-                        
+                        Spacer()
                     }
-                    .padding(.top,100)
+                    .padding(.top,80)
                     .frame(width:getFrameSize().width)
                     
                     .background(Color.white)
@@ -158,12 +164,14 @@ struct HomeShowProfile: View {
                     
                 }
                 .offset(y:-40)
-                
+                .padding(.bottom,-60)
+                .edgesIgnoringSafeArea(.bottom)
+
                 Spacer()
             }
             
             if vm.isLoading {
-                LoadingCubeOffset()
+                LoadingCapsuleSpacing()
             }
             
         }

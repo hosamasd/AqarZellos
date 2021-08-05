@@ -9,7 +9,7 @@ import SwiftUI
 
 struct HomeTab: View {
     @State var index = 0
-
+    
     var body: some View {
         ZStack(alignment: Alignment(horizontal: .center, vertical: .bottom), content: {
             
@@ -21,13 +21,13 @@ struct HomeTab: View {
                 
             }
             else if index == 2   {
-
+                
                 HomeFavorites()
             }            else {
-               Homenotifications()
+                Homenotifications()
             }
             
-        MyTab(index: $index)
+            MyTab(index: $index)
             
         })
         .edgesIgnoringSafeArea(.all)        //        )

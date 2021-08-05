@@ -83,6 +83,10 @@ struct MainHome: View {
             }
             .padding(.top,40)
             
+            if vm.isLoading {
+//                LoadingCircleOpacity()
+                LoadingCapsuleSpacing()
+            }
             
             
         }

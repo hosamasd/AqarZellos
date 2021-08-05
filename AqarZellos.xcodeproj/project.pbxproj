@@ -99,6 +99,10 @@
 		4EF4848F26B93152006747AD /* HomeChatTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF4848E26B93152006747AD /* HomeChatTopView.swift */; };
 		4EF4849226B9320D006747AD /* ChatBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF4849126B9320D006747AD /* ChatBubble.swift */; };
 		4EF4849426B932C4006747AD /* BubbleArrow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF4849326B932C4006747AD /* BubbleArrow.swift */; };
+		4EF644C326BBB7B1006D7F42 /* LocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF644C226BBB7B1006D7F42 /* LocationView.swift */; };
+		4EF644C526BBB7EB006D7F42 /* LocationFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF644C426BBB7EB006D7F42 /* LocationFetcher.swift */; };
+		4EF644C726BBB7FF006D7F42 /* MainMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF644C626BBB7FF006D7F42 /* MainMapView.swift */; };
+		4EF644C926BBBD3A006D7F42 /* HomeSettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF644C826BBBD3A006D7F42 /* HomeSettingsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -196,6 +200,10 @@
 		4EF4848E26B93152006747AD /* HomeChatTopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeChatTopView.swift; sourceTree = "<group>"; };
 		4EF4849126B9320D006747AD /* ChatBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBubble.swift; sourceTree = "<group>"; };
 		4EF4849326B932C4006747AD /* BubbleArrow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleArrow.swift; sourceTree = "<group>"; };
+		4EF644C226BBB7B1006D7F42 /* LocationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationView.swift; sourceTree = "<group>"; };
+		4EF644C426BBB7EB006D7F42 /* LocationFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationFetcher.swift; sourceTree = "<group>"; };
+		4EF644C626BBB7FF006D7F42 /* MainMapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMapView.swift; sourceTree = "<group>"; };
+		4EF644C826BBBD3A006D7F42 /* HomeSettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSettingsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -452,6 +460,7 @@
 				4EF4848C26B930D8006747AD /* HomeChatViewModel.swift */,
 				4EBDD36426BA4BBF0094DB44 /* HomeFilterViewModel.swift */,
 				4EB2D7F726BA920200D20B19 /* HomeCPostViewModel.swift */,
+				4EF644C826BBBD3A006D7F42 /* HomeSettingsViewModel.swift */,
 			);
 			path = wiewmodel;
 			sourceTree = "<group>";
@@ -471,6 +480,7 @@
 		4E729D9426B7AE6B00036056 /* reg */ = {
 			isa = PBXGroup;
 			children = (
+				4EF644C126BBB784006D7F42 /* location */,
 				4E729D9626B7AE7D00036056 /* HomeWelcome.swift */,
 				4E0B59D726B7C2FE00639D36 /* HomeLogSign.swift */,
 			);
@@ -662,6 +672,16 @@
 			path = chat;
 			sourceTree = "<group>";
 		};
+		4EF644C126BBB784006D7F42 /* location */ = {
+			isa = PBXGroup;
+			children = (
+				4EF644C626BBB7FF006D7F42 /* MainMapView.swift */,
+				4EF644C426BBB7EB006D7F42 /* LocationFetcher.swift */,
+				4EF644C226BBB7B1006D7F42 /* LocationView.swift */,
+			);
+			path = location;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -731,6 +751,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4EF644C726BBB7FF006D7F42 /* MainMapView.swift in Sources */,
 				4E063B8F26B98CF4008BCDA7 /* PostRowView.swift in Sources */,
 				4EC721C826B7E63400AA6B37 /* LoadingCircleColors.swift in Sources */,
 				4EC4E86B26B81DFC00832ABF /* HomeHelpTopView.swift in Sources */,
@@ -770,10 +791,13 @@
 				4EBDD36226BA4B3E0094DB44 /* DropDownGroup.swift in Sources */,
 				4E52ED5426B8088F004E0881 /* HomeSettingsRowView.swift in Sources */,
 				4EF4849226B9320D006747AD /* ChatBubble.swift in Sources */,
+				4EF644C326BBB7B1006D7F42 /* LocationView.swift in Sources */,
 				4E95762A26B9072D00A0D8D1 /* HomenotificationsViewModel.swift in Sources */,
 				4E729D9D26B7AED000036056 /* EX_View.swift in Sources */,
+				4EF644C526BBB7EB006D7F42 /* LocationFetcher.swift in Sources */,
 				4E729D9F26B7AEE000036056 /* ex_Image.swift in Sources */,
 				4E0B59DE26B7C43C00639D36 /* TFWithBorder.swift in Sources */,
+				4EF644C926BBBD3A006D7F42 /* HomeSettingsViewModel.swift in Sources */,
 				4EC4E86F26B8204F00832ABF /* HomeContactUsTopView.swift in Sources */,
 				4EC4E86D26B8200C00832ABF /* HomeContactUs.swift in Sources */,
 				4EB2D7F626BA919F00D20B19 /* HomeCPost.swift in Sources */,

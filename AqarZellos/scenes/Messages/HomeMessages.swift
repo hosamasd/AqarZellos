@@ -25,9 +25,11 @@ struct HomeMessages: View {
                 HomeMessagesTopView()
                     .padding(.horizontal,24)
                 
+              
+                    
                 if vm.messagesArray.isEmpty {
-                    Text("No Results Found")
-                        .padding(.top,20)
+//                    Text("No Results Found")
+//                        .padding(.top,20)
                 }
                 else {
                     
@@ -35,7 +37,7 @@ struct HomeMessages: View {
                         
                         
                         VStack {
-                            
+
                             Text("Messages")
                                 .font(.system(size: 40))
                                 .fontWeight(.semibold)
@@ -49,8 +51,11 @@ struct HomeMessages: View {
                                 
                                 ForEach(vm.messagesArray){gradient in
                                     
-                                    
+                                    NavigationLink(destination:
+                                                    HomeChat()
+                                    )  {
                                     MessageRowView(x: gradient)
+                                }
                                 }
                             }
                             .padding(.bottom)
@@ -68,9 +73,10 @@ struct HomeMessages: View {
                     .shadow(radius: 0)
                     //                .padding(.top)
                     .clipShape(CustomCorners(corners: [.topRight,.topLeft], width: 30))
-                    
+
                     .padding(.top)
                 }
+             
                 
                 Spacer()
                 
@@ -78,7 +84,7 @@ struct HomeMessages: View {
             .padding(.top,40)
             
             if vm.isLoading {
-                LoadingCubeOffset()
+                LoadingCapsuleSpacing()
             }
             
         }

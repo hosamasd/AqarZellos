@@ -20,10 +20,10 @@ class HomeMessagesViewModel: ObservableObject {
     }
     
     func getDatas()  {
-//        withAnimation{isLoading.toggle()}
+        withAnimation{isLoading.toggle()}
         
-//        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now()+0) {
-//            withAnimation{self.isLoading.toggle()}
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now()+2) {
+            withAnimation{self.isLoading.toggle()}
             
             self.messagesArray = [
                 .init(name: "Marie Winter", pic: "sss", desc: "Happiness is not something readymade. \nIt comes from your own actions."),
@@ -39,7 +39,7 @@ class HomeMessagesViewModel: ObservableObject {
 
             ]
             
-//        }
+        }
         
         
     }

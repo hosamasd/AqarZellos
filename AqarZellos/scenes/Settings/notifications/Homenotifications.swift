@@ -26,8 +26,8 @@ struct Homenotifications: View {
                     .padding(.horizontal,24)
                 
                 if vm.notificationArray.isEmpty {
-                    Text("No Results Found")
-                        .padding(.top,20)
+//                    Text("No Results Found")
+//                        .padding(.top,20)
                 }
                 else {
                     
@@ -60,9 +60,10 @@ struct Homenotifications: View {
                 
             }
             .padding(.top,40)
-            
+            .padding(.bottom,80)
+
             if vm.isLoading {
-                LoadingCubeOffset()
+                LoadingCapsuleSpacing()
             }
             
         }

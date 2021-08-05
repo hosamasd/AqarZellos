@@ -26,8 +26,8 @@ struct HomeFavorites: View {
                     .padding(.horizontal,24)
                 
                 if vm.favorArray.isEmpty {
-                    Text("No Results Found")
-                        .padding(.top,20)
+//                    Text("No Results Found")
+//                        .padding(.top,20)
                 }
                 else {
                     
@@ -59,9 +59,10 @@ struct HomeFavorites: View {
                 
             }
             .padding(.top,40)
+            .padding(.bottom,80)
             
             if vm.isLoading {
-                LoadingCubeOffset()
+                LoadingCapsuleSpacing()
             }
             
         }

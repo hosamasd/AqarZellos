@@ -175,7 +175,8 @@ struct HomeChat: View {
 //            .edgesIgnoringSafeArea(.all)
             
             if vm.isLoading {
-                LoadingCubeOffset()
+//                LoadingCubeOffset()
+                LoadingCapsuleSpacing()
             }
             
         }

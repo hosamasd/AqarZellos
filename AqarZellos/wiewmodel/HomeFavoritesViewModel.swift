@@ -20,10 +20,10 @@ class HomeFavoritesViewModel: ObservableObject {
     }
     
     func getDatas()  {
-//        withAnimation{isLoading.toggle()}
+        withAnimation{isLoading.toggle()}
         
-//        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now()+0) {
-//            withAnimation{self.isLoading.toggle()}
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now()+2) {
+            withAnimation{self.isLoading.toggle()}
             
             self.favorArray = [
                 .init(name: "Home", time: "1:48 Hour ago ", pic: "images1"),
@@ -38,7 +38,7 @@ class HomeFavoritesViewModel: ObservableObject {
                 
             ]
             
-//        }
+        }
         
         
     }
