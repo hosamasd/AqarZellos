@@ -36,7 +36,8 @@ class HomeFilterViewModel: ObservableObject {
     @Published var alert = false
     @Published var alertMsg = ""
     @Published var isLoading = false
-    
+    @Published var isSearch = false
+
     
     @Published var nameDrop = ""
     @Published var typeDrop = ""
@@ -55,11 +56,7 @@ class HomeFilterViewModel: ObservableObject {
     @Published var spots = DataS.spots
     @Published var selectedPlace: ParkingItem?
     
-    @Published var region = MKCoordinateRegion(
-        center: CLLocationCoordinate2D(
-            latitude: DataS.spots[0].location.latitude,
-            longitude: DataS.spots[0].location.longitude),
-        span: MKCoordinateSpan(latitudeDelta: 0.007, longitudeDelta: 0.007))
+    @Published var region = MKCoordinateRegion()
     
     @Published var citys:[String] = [
         "cairo","zagazig","asswan","alex","suez",
@@ -98,6 +95,11 @@ class HomeFilterViewModel: ObservableObject {
         
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now()+5) {
             withAnimation{self.isLoading.toggle()}
+            
+            self.region = MKCoordinateRegion(center: CLLocationCoordinate2D(
+            latitude: DataS.spots[0].location.latitude,
+            longitude: DataS.spots[0].location.longitude),
+        span: MKCoordinateSpan(latitudeDelta: 0.007, longitudeDelta: 0.007))
             
             self.postsArray = [
                 

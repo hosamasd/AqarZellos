@@ -12,7 +12,8 @@ struct HomeWelcome: View {
     @State var isShow = false
     @State var showLocation = false
     @State var locationText = ""
-
+    @StateObject var vm = HomeWelcomeViewModel()
+    
     var body: some View {
         ZStack {
             
@@ -21,6 +22,17 @@ struct HomeWelcome: View {
                 .aspectRatio(contentMode: .fill)
                 .frame(maxWidth:getFrameSize().width,maxHeight: getFrameSize().height+20)
                 .edgesIgnoringSafeArea(.top)
+            
+            if vm.isGet {
+                
+                NavigationLink(
+                    destination: HomeLogSign(),
+                    isActive: .constant(self.vm.isGet )   // << activate conditionally
+                ) {
+                    EmptyView()
+                }
+                //                    vm.isGet.toggle()
+            }
             
             VStack {
                 
@@ -59,21 +71,21 @@ struct HomeWelcome: View {
                         Button(action: {}, label: {
                             
                             NavigationLink(destination:
-                            HomeLogSign()
+                                            HomeLogSign()
                             ) {
-                            
-                            
-                            RoundedRectangle(cornerRadius: 10)
-                                .fill(Color("mains"))
-                                .overlay(
-                                    
-                                    Text("Current location")
-                                        .foregroundColor(.white)
-                                        .font(.system(size: 22))
-                                        .fontWeight(.bold)
-                                )
-                            
-                            
+                                
+                                
+                                RoundedRectangle(cornerRadius: 10)
+                                    .fill(Color("mains"))
+                                    .overlay(
+                                        
+                                        Text("Current location")
+                                            .foregroundColor(.white)
+                                            .font(.system(size: 22))
+                                            .fontWeight(.bold)
+                                    )
+                                
+                                
                             }
                         })
                         .frame(height:50)
@@ -111,12 +123,29 @@ struct HomeWelcome: View {
                 }
                 .opacity(isShow ? 1 : 0)
                 
+                
+                
                 Spacer()
+                
+                //                if vm.isGet {
+                //
+                //                    NavigationLink(destination:
+                //                    HomeLogSign()
+                //                    ) {
+                //                    Text("")
+                //                    }
+                //                    vm.isGet.toggle()
+                //                }
             }
+            
+            
+            
+            
         }
+        
         .onAppear(perform: {
             DispatchQueue.main.asyncAfter(deadline: DispatchTime.now()+1) {
-                withAnimation{isShow.toggle()}
+                withAnimation{isShow=true}
                 
             }
             
@@ -124,7 +153,11 @@ struct HomeWelcome: View {
         
         .fullScreenCover(isPresented: $showLocation, content: {
             LocationView(dismiss: $showLocation, locationText: $locationText )//enteredLocation: $enteredLocation)
+                .environmentObject(vm)
         })
+        
+        
+        
     }
 }
 

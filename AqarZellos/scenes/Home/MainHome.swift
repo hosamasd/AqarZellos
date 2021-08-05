@@ -94,6 +94,10 @@ struct MainHome: View {
             if vm.postsArray.isEmpty {
                 vm.getDatas()
             }
+            if vm.isSearch {
+                vm.postsArray.removeAll()
+                vm.getDatas()
+            }
         })
     }
 }

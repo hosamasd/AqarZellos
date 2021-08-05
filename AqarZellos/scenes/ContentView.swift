@@ -9,15 +9,17 @@ import SwiftUI
 
 struct ContentView: View {
     @AppStorage("isUserLogin") var isUserLogin: Bool = false
-    
+    @StateObject var vmmm = HomeFilterViewModel()
+
     var body: some View {
         
         
         ZStack {
 
-            if isUserLogin {
+            if !isUserLogin {
 //                SHomeChat()
-                HomeTab()
+                MainHome()
+                    .environmentObject(vmmm)
                     .transition(.move(edge: .bottom))
             }
             else {

@@ -25,6 +25,7 @@
 		4E10A52726B91AA500504746 /* MessageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E10A52626B91AA500504746 /* MessageModel.swift */; };
 		4E10A52926B91B7400504746 /* MessageRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E10A52826B91B7400504746 /* MessageRowView.swift */; };
 		4E10A52B26B91B9A00504746 /* HomeMessagesTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E10A52A26B91B9A00504746 /* HomeMessagesTopView.swift */; };
+		4E15FCC726BBF21F00D53332 /* HomeWelcomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E15FCC626BBF21F00D53332 /* HomeWelcomeViewModel.swift */; };
 		4E2B169726BA5DF800CE0708 /* SliderValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2B169626BA5DF800CE0708 /* SliderValue.swift */; };
 		4E2B169926BA5E8900CE0708 /* SliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2B169826BA5E8900CE0708 /* SliderView.swift */; };
 		4E2B169B26BA5F8500CE0708 /* SSliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2B169A26BA5F8500CE0708 /* SSliderView.swift */; };
@@ -124,6 +125,7 @@
 		4E10A52626B91AA500504746 /* MessageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageModel.swift; sourceTree = "<group>"; };
 		4E10A52826B91B7400504746 /* MessageRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageRowView.swift; sourceTree = "<group>"; };
 		4E10A52A26B91B9A00504746 /* HomeMessagesTopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMessagesTopView.swift; sourceTree = "<group>"; };
+		4E15FCC626BBF21F00D53332 /* HomeWelcomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWelcomeViewModel.swift; sourceTree = "<group>"; };
 		4E2B169626BA5DF800CE0708 /* SliderValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderValue.swift; sourceTree = "<group>"; };
 		4E2B169826BA5E8900CE0708 /* SliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderView.swift; sourceTree = "<group>"; };
 		4E2B169A26BA5F8500CE0708 /* SSliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSliderView.swift; sourceTree = "<group>"; };
@@ -461,6 +463,7 @@
 				4EBDD36426BA4BBF0094DB44 /* HomeFilterViewModel.swift */,
 				4EB2D7F726BA920200D20B19 /* HomeCPostViewModel.swift */,
 				4EF644C826BBBD3A006D7F42 /* HomeSettingsViewModel.swift */,
+				4E15FCC626BBF21F00D53332 /* HomeWelcomeViewModel.swift */,
 			);
 			path = wiewmodel;
 			sourceTree = "<group>";
@@ -814,6 +817,7 @@
 				4EC721CA26B7E63400AA6B37 /* LoadingCapsuleSpacing.swift in Sources */,
 				4E0B59D826B7C2FE00639D36 /* HomeLogSign.swift in Sources */,
 				4E10A52926B91B7400504746 /* MessageRowView.swift in Sources */,
+				4E15FCC726BBF21F00D53332 /* HomeWelcomeViewModel.swift in Sources */,
 				4E95762E26B907C700A0D8D1 /* NotfyRowView.swift in Sources */,
 				4EB65B1726B964D000B93DBF /* ProfileImgRowView.swift in Sources */,
 				4EF4848D26B930D8006747AD /* HomeChatViewModel.swift in Sources */,

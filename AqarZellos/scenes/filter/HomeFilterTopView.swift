@@ -6,16 +6,21 @@
 //
 
 import SwiftUI
+import MapKit
 
 struct HomeFilterTopView: View {
     @Environment(\.presentationMode) var presentationMode
     @Binding var show:Bool
+    @EnvironmentObject var vm : HomeFilterViewModel
 
     var body: some View {
         HStack {
             
             Button(action: {withAnimation{
                 show.toggle()
+                vm.postsArray.removeAll()
+                vm.region = MKCoordinateRegion()
+                vm.getDatas()
                     presentationMode.wrappedValue.dismiss()
             }}, label: {
                 Image(systemName: "chevron.backward")

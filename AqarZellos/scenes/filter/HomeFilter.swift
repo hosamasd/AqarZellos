@@ -6,9 +6,10 @@
 //
 
 import SwiftUI
+import MapKit
 
 struct HomeFilter: View {
-    @ObservedObject var vm : HomeFilterViewModel
+    @EnvironmentObject var vm : HomeFilterViewModel
     @StateObject var slider = CustomSlider(start: 200, end: 200000)
     @StateObject var Spaceslider = CustomSlider(start: 100, end: 20000)
     @Binding var show:Bool
@@ -26,6 +27,7 @@ struct HomeFilter: View {
             VStack {
                 
                 HomeFilterTopView(show: $show)
+                    .environmentObject(vm)
                     .padding(.horizontal,24)
                 
                 ScrollView(.vertical, showsIndicators: false) {
@@ -122,15 +124,20 @@ struct HomeFilter: View {
                             
                         }
                         
-                        Button(action: {}, label: {
+                        Button(action: {withAnimation{ show.toggle()
+                                vm.postsArray.removeAll()
+                                vm.region = MKCoordinateRegion()
+
+                                vm.getDatas()}}, label: {
                             RoundedRectangle(cornerRadius: 10)
-                                .stroke(Color("logBor"), lineWidth: 1)
+                                .fill(Color("cha"))
+//                                .stroke(Color("logBor"), lineWidth: 1)
                                 .overlay(
                                     
                                     Text("Submit")
                                         .font(.system(size: 20))
                                         .fontWeight(.bold)
-                                        .foregroundColor(Color.black.opacity(0.2))
+                                        .foregroundColor(Color.white)//.opacity(0.2))
                                     
                                 )
                         })
@@ -172,6 +179,6 @@ struct HomeFilter: View {
 
 struct HomeFilter_Previews: PreviewProvider {
     static var previews: some View {
-        HomeFilter(vm: HomeFilterViewModel(), show: .constant(false))
+        HomeFilter( show: .constant(false))
     }
 }

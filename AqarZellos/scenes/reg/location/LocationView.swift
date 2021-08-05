@@ -12,7 +12,8 @@ import MapKit
 fileprivate let locationFetcher = LocationFetcher()
 
 struct LocationView: View {
-    
+    @EnvironmentObject var vm : HomeWelcomeViewModel
+
     @State var centerCoordinate = CLLocationCoordinate2D()
     @State var currentLocation: CLLocationCoordinate2D?
     @State var hideAddButton = false
@@ -83,6 +84,8 @@ struct LocationView: View {
             UserLocationView(self)
             XMarkLocationView(self)
                 .padding(.top,20)
+                .environmentObject(vm)
+                
             
             if !hideAddButton {
                 AddButton(self)
@@ -188,11 +191,13 @@ struct LocationView: View {
     }
     
     struct XMarkLocationView: View {
-        
+        @EnvironmentObject var vm : HomeWelcomeViewModel
+
         var parent: LocationView
         
         init(_ parent: LocationView) {
             self.parent = parent
+        
         }
         
         var body: some View {
@@ -209,6 +214,7 @@ struct LocationView: View {
 //                                parent.getAddress(loc: parent.centerCoordinate)
 
                                 self.parent.dismiss.toggle()
+                                vm.isGet.toggle()
                             }
                         
                         

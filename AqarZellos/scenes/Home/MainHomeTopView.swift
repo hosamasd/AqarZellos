@@ -48,8 +48,8 @@ struct MainHomeTopView: View {
         })
         
         .fullScreenCover(isPresented: $shFilter, content: {
-            HomeFilter(vm: vm, show: $shFilter)
-//                .environmentObject(vm)
+            HomeFilter( show: $shFilter)
+                .environmentObject(vm)
         })
         
         
