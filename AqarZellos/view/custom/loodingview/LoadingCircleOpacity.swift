@@ -10,7 +10,7 @@ import SwiftUI
 struct LoadingCircleOpacity: View {
     
     @State private var loadingAnimation = 0
-
+    
     var body: some View {
         
         ZStack{
@@ -30,7 +30,7 @@ struct LoadingCircleOpacity: View {
                     .frame(width: 13, height: 13, alignment: .center)
                     .foregroundColor(Color(#colorLiteral(red: 1, green: 0.9607843137, blue: 0.6705882353, alpha: 1)).opacity(0.2))
                     .offset(x: loadingAnimation == 360 ? 55 : 0)
-           
+                
                 Circle()
                     .frame(width: 16, height: 16, alignment: .center)
                     .foregroundColor(Color(#colorLiteral(red: 1, green: 0.9607843137, blue: 0.6705882353, alpha: 1)).opacity(0.3))
@@ -41,7 +41,7 @@ struct LoadingCircleOpacity: View {
                     .frame(width: 19, height: 19, alignment: .center)
                     .foregroundColor(Color(#colorLiteral(red: 1, green: 0.9607843137, blue: 0.6705882353, alpha: 1)).opacity(0.4))
                     .offset(y: loadingAnimation == 360 ? 55 : 0)
-                       
+                
                 Circle()
                     .frame(width: 21, height: 21, alignment: .center)
                     .foregroundColor(Color(#colorLiteral(red: 1, green: 0.9607843137, blue: 0.6705882353, alpha: 1)).opacity(0.5))
@@ -63,13 +63,13 @@ struct LoadingCircleOpacity: View {
                     .frame(width: 30, height: 30, alignment: .center)
                     .foregroundColor(Color(#colorLiteral(red: 1, green: 0.9607843137, blue: 0.6705882353, alpha: 1)))
                     .offset(y: loadingAnimation == 360 ? -55 : 0)
- 
+                
             }//End of ZStack
             .opacity( loadingAnimation == 360 ? 0 : 1)
             .animation(Animation.linear(duration: 1.0).repeatCount(1).delay(1.6))
-
-//            .animation(.linear(duration: 1.8).repeatCount(1).delay(1.6))
-         
+            
+            //            .animation(.linear(duration: 1.8).repeatCount(1).delay(1.6))
+            
             //MARK: - Second Animation
             ZStack{
                 
@@ -83,7 +83,7 @@ struct LoadingCircleOpacity: View {
                     .frame(width: 13, height: 13, alignment: .center)
                     .foregroundColor(Color(#colorLiteral(red: 1, green: 0.9607843137, blue: 0.6705882353, alpha: 1)).opacity(0.2))
                     .offset(x: 55)
-           
+                
                 Circle()
                     .frame(width: 16, height: 16, alignment: .center)
                     .foregroundColor(Color(#colorLiteral(red: 1, green: 0.9607843137, blue: 0.6705882353, alpha: 1)).opacity(0.3))
@@ -94,7 +94,7 @@ struct LoadingCircleOpacity: View {
                     .frame(width: 19, height: 19, alignment: .center)
                     .foregroundColor(Color(#colorLiteral(red: 1, green: 0.9607843137, blue: 0.6705882353, alpha: 1)).opacity(0.4))
                     .offset(y: 55)
-       
+                
                 Circle()
                     .frame(width: 21, height: 21, alignment: .center)
                     .foregroundColor(Color(#colorLiteral(red: 1, green: 0.9607843137, blue: 0.6705882353, alpha: 1)).opacity(0.5))
@@ -119,10 +119,10 @@ struct LoadingCircleOpacity: View {
                 
             }//End of ZStack
             .rotationEffect(.degrees(Double(loadingAnimation)))
-//            .animation(.linear(duration: 1.8))
-//            .animation(Animation.default.repeat(while: true))
+            //            .animation(.linear(duration: 1.8))
+            //            .animation(Animation.default.repeat(while: true))
             .animation(Animation.linear(duration: 1.8).repeatForever(autoreverses: false).delay(3))
-//            .animation(.linear(duration: 1.8).repeatForever(autoreverses: false).delay(3))
+            //            .animation(.linear(duration: 1.8).repeatForever(autoreverses: false).delay(3))
             
         }//End of ZStack
         .onAppear(){
@@ -130,7 +130,7 @@ struct LoadingCircleOpacity: View {
         }
     }
     
-//    func repeatForever(autoreverses: Bool = true) -> Animation
+    //    func repeatForever(autoreverses: Bool = true) -> Animation
 }
 
 extension Animation {

@@ -10,7 +10,8 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         
-        HomeCPost(show: .constant(false))
+        HomeLogSign()
+//        HomeCPost(show: .constant(false))
 //        HomeTab()
         
 //        MainHome()

@@ -105,7 +105,7 @@ struct HomeLogSign: View {
             
             if vm.isLoading {
 //                LoadingCircleOpacity()
-                LoadingCubeOffset()
+                LoadingCapsuleSpacing()
             }
         }
         .alert(isPresented: $vm.alert) {
