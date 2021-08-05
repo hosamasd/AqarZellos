@@ -8,6 +8,10 @@
 import SwiftUI
 
 struct HomeTab: View {
+    @StateObject var vm = HomeFavoritesViewModel()
+    @StateObject var vmm = HomenotificationsViewModel()
+    @StateObject var vmmm = HomeFilterViewModel()
+
     @State var index = 0
     
     var body: some View {
@@ -15,6 +19,7 @@ struct HomeTab: View {
             
             if index == 0 {
                 MainHome()
+                    .environmentObject(vmmm)
             }
             else if index == 1   {
                 HomePost()
@@ -23,8 +28,10 @@ struct HomeTab: View {
             else if index == 2   {
                 
                 HomeFavorites()
+                    .environmentObject(vm)
             }            else {
                 Homenotifications()
+                    .environmentObject(vmm)
             }
             
             MyTab(index: $index)

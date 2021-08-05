@@ -11,6 +11,7 @@ import SwiftUI
 struct DynamicHeightTextField: UIViewRepresentable {
     @Binding var text: String
     @Binding var height: CGFloat
+    @Binding var isFocus: Bool
 
     func makeUIView(context: Context) -> UITextView {
         let textView = UITextView()
@@ -59,6 +60,7 @@ class Coordinator: NSObject, UITextViewDelegate, NSLayoutManagerDelegate {
     }
 
     func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
+        
         if (text == "\n") {
             textView.resignFirstResponder()
             return false
@@ -66,6 +68,15 @@ class Coordinator: NSObject, UITextViewDelegate, NSLayoutManagerDelegate {
         return true
     }
 
+    func textViewDidBeginEditing(_ textView: UITextView) {
+        dynamicHeightTextField.isFocus=true
+    }
+  
+    func textViewDidEndEditing(_ textView: UITextView) {
+        dynamicHeightTextField.isFocus=false
+
+    }
+    
     func layoutManager(_ layoutManager: NSLayoutManager, didCompleteLayoutFor textContainer: NSTextContainer?, atEnd layoutFinishedFlag: Bool) {
 
         DispatchQueue.main.async { [weak self] in

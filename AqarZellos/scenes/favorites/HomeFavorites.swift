@@ -9,7 +9,7 @@ import SwiftUI
 
 struct HomeFavorites: View {
     @State var columns = Array(repeating: GridItem(.flexible(), spacing: 12), count: 2)
-    @StateObject var vm = HomeFavoritesViewModel()
+    @EnvironmentObject var vm : HomeFavoritesViewModel
     
     var body: some View {
         ZStack {
@@ -46,7 +46,7 @@ struct HomeFavorites: View {
                         }
                         .padding(.horizontal,24)
                         .padding(.bottom)
-                        .padding(.top)
+                        .padding(.top,20)
                         
                     }
                     .zIndex(0)
@@ -69,6 +69,12 @@ struct HomeFavorites: View {
         .navigationBarTitle("")
         .navigationBarHidden(true)
         .navigationBarBackButtonHidden(true)
+        
+        .onAppear(perform: {
+            if vm.favorArray.isEmpty{
+                vm.getDatas()
+            }
+        })
     }
 }
 

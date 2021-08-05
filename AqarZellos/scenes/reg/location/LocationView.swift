@@ -60,46 +60,6 @@ struct LocationView: View {
                 locationText = ff
             }
         }
-//        let address = ABCreateStringWithAddressDictionary(placemark.addressDictionary!, false).componentsSeparatedByString("\n").joinWithSeparator(", ")
-//        let geoCoder = CLGeocoder()
-//        let location = CLLocation(latitude: latitude, longitude: longitude)
-//        geoCoder.reverseGeocodeLocation(location, completionHandler: { (placemarks, error) -> Void in
-//
-//            // Place details
-//            var placeMark: CLPlacemark!
-//            placeMark = placemarks?[0]
-//
-//            // Location name
-//            if let locationName = placeMark.location {
-//                print(locationName)
-//
-//            }
-//            // Street address
-//            if let street = placeMark.thoroughfare {
-//                print(street)
-//                locationText = street
-//            }
-//            // City
-//            if let city = placeMark.locality {
-//                print(city)
-//                locationText = city
-//            }
-//            // State
-////            if let state = placemark.administrativeArea {
-////                print(state)
-////            }
-//            // Zip code
-//            if let zipCode = placeMark.postalCode {
-//                print(zipCode)
-//            }
-//            // Country
-//            if let country = placeMark.country {
-//                print(country)
-//                locationText = country
-//            }
-//
-//
-//        })
         
     }
     
@@ -122,6 +82,7 @@ struct LocationView: View {
             
             UserLocationView(self)
             XMarkLocationView(self)
+                .padding(.top,20)
             
             if !hideAddButton {
                 AddButton(self)

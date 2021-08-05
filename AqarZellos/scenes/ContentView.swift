@@ -13,26 +13,32 @@ struct ContentView: View {
     var body: some View {
         
         
-//        ZStack {
-//
-//            if isUserLogin {
-//                HomeTab()
-//                    .transition(.move(edge: .bottom))
-//            }
-//            else {
-//                HomeWelcome()
-//            }
-//
-//        }
+        ZStack {
+
+            if isUserLogin {
+//                SHomeChat()
+                HomeTab()
+                    .transition(.move(edge: .bottom))
+            }
+            else {
+                NavigationView {
+                    HomeWelcome()
+                        .navigationBarTitle("")
+                        .navigationBarHidden(true)
+                        .navigationBarBackButtonHidden(true)
+                }
+            }
+
+        }
         
         
         //        HomeFavorites()
         //        HomeCPost(show: .constant(false))
         //        HomeTab()
         
-        //        MainHome()
+//                MainHome()
 //                NavigationView {
-                    HomeShowProfile()
+//                    HomeShowProfile()
 //        HomeSettings(show: .constant(false))
         //
 //                }

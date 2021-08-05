@@ -16,7 +16,7 @@ class HomenotificationsViewModel:ObservableObject {
     @Published var notificationArray:[NotifyModek] = []
     
     init() {
-        getDatas()
+//        getDatas()
     }
     
     func getDatas()  {

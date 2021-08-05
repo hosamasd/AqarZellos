@@ -108,6 +108,10 @@ struct HomeLogSign: View {
                 LoadingCapsuleSpacing()
             }
         }
+        .navigationBarTitle("")
+        .navigationBarHidden(true)
+        .navigationBarBackButtonHidden(true)
+        
         .alert(isPresented: $vm.alert) {
             
             Alert(title: Text("Error"), message: Text(self.vm.alertMsg), dismissButton: .default(Text("Ok")))

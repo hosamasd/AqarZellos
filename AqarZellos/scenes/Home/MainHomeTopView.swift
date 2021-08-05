@@ -11,7 +11,7 @@ struct MainHomeTopView: View {
     @State var shProf=false
     @State var shFilter=false
     @ObservedObject var vm : HomeFilterViewModel
-    
+
     var body: some View {
         HStack {
             
@@ -49,6 +49,7 @@ struct MainHomeTopView: View {
         
         .fullScreenCover(isPresented: $shFilter, content: {
             HomeFilter(vm: vm, show: $shFilter)
+//                .environmentObject(vm)
         })
         
         

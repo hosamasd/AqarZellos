@@ -15,7 +15,8 @@ class HomeChatViewModel: ObservableObject {
     
     
     @Published var showEmoj = false
-    
+    @Published var txtFocused = false
+
     @Published var txtMessage=""
     @Published var messagesArray:[MessageModel] = [MessageModel]()
     

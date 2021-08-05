@@ -9,7 +9,7 @@ import SwiftUI
 
 struct Homenotifications: View {
     @State var columns = Array(repeating: GridItem(.flexible(), spacing: 0), count: 1)
-    @StateObject var vm = HomenotificationsViewModel()
+    @EnvironmentObject var vm : HomenotificationsViewModel
     
     var body: some View {
         ZStack {
@@ -46,7 +46,7 @@ struct Homenotifications: View {
                         }
                         .padding(.horizontal,8)
                         .padding(.bottom)
-                        .padding(.top)
+                        .padding(.top,20)
                         
                     }
                     .zIndex(0)
@@ -70,6 +70,12 @@ struct Homenotifications: View {
         .navigationBarTitle("")
         .navigationBarHidden(true)
         .navigationBarBackButtonHidden(true)
+        
+        .onAppear(perform: {
+            if vm.notificationArray.isEmpty{
+                vm.getDatas()
+            }
+        })
     }
 }
 

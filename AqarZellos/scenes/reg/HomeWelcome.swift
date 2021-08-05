@@ -56,9 +56,11 @@ struct HomeWelcome: View {
                             .multilineTextAlignment(.center)
                             .padding(.horizontal,100)
                         
-                        Button(action: {
+                        Button(action: {}, label: {
                             
-                        }, label: {
+                            NavigationLink(destination:
+                            HomeLogSign()
+                            ) {
                             
                             
                             RoundedRectangle(cornerRadius: 10)
@@ -72,7 +74,7 @@ struct HomeWelcome: View {
                                 )
                             
                             
-                            
+                            }
                         })
                         .frame(height:50)
                         .shadow(color: Color("bord"), radius: 5, x: 5, y: -2.5)

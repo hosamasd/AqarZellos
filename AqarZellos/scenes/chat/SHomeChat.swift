@@ -35,30 +35,50 @@ struct SHomeChat: View {
                 
                 VStack{
                     
+                    VStack {
+                        HStack {
+                            
+                            Image(x.pic)
+                                .resizable()
+                                .frame(width: 62, height: 62)
+                                .cornerRadius(10)
+                            
+                            Text(x.name)
+                                .font(.system(size: 20))
+                                .fontWeight(.semibold)
+                                .frame(maxWidth:.infinity,alignment: .leading)
+                                .padding(.top,40)
+                                .padding(.bottom,40)
+                        }
+                        
+                        Divider()
+                    }
+                    .padding(.horizontal,24)
+
                     ScrollViewReader{reader in
                         
                         ScrollView( .vertical, showsIndicators: false){
                             
                             
                             
-                            VStack {
-                                HStack {
-                                    
-                                    Image(x.pic)
-                                        .resizable()
-                                        .frame(width: 62, height: 62)
-                                        .cornerRadius(10)
-                                    
-                                    Text(x.name)
-                                        .font(.system(size: 20))
-                                        .fontWeight(.semibold)
-                                        .frame(maxWidth:.infinity,alignment: .leading)
-                                        .padding(.top,40)
-                                        .padding(.bottom,40)
-                                }
-                                
-                                Divider()
-                            }
+//                            VStack {
+//                                HStack {
+//
+//                                    Image(x.pic)
+//                                        .resizable()
+//                                        .frame(width: 62, height: 62)
+//                                        .cornerRadius(10)
+//
+//                                    Text(x.name)
+//                                        .font(.system(size: 20))
+//                                        .fontWeight(.semibold)
+//                                        .frame(maxWidth:.infinity,alignment: .leading)
+//                                        .padding(.top,40)
+//                                        .padding(.bottom,40)
+//                                }
+//
+//                                Divider()
+//                            }
                             
                             LazyVStack(alignment: .center, spacing: 20) {
                                 

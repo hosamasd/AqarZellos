@@ -41,7 +41,7 @@ class HomeFilterViewModel: ObservableObject {
     @Published var nameDrop = ""
     @Published var typeDrop = ""
     @Published var areaDrop = ""
-
+    
     //slider
     @State var minPrice:CGFloat = 2000
     @State var maxPrice:CGFloat = 2000000
@@ -51,10 +51,10 @@ class HomeFilterViewModel: ObservableObject {
     
     @Published var roomsNum = 0
     @Published var bathroomNum = 0
-
+    
     @Published var spots = DataS.spots
     @Published var selectedPlace: ParkingItem?
-
+    
     @Published var region = MKCoordinateRegion(
         center: CLLocationCoordinate2D(
             latitude: DataS.spots[0].location.latitude,
@@ -77,11 +77,43 @@ class HomeFilterViewModel: ObservableObject {
     ]
     
     @Published var postsArray:[PostModel] = [
-    
-        PostModel(name: "Home", pic: "images1", desc: "10.000 EGY , 150 M"),
-        PostModel(name: "Home", pic: "images1", desc: "10.000 EGY , 150 M"),
-        PostModel(name: "Home", pic: "images1", desc: "10.000 EGY , 150 M"),
-        PostModel(name: "Home", pic: "images1", desc: "10.000 EGY , 150 M"),
-
+        
+        //        PostModel(name: "Home", pic: "images1", desc: "10.000 EGY , 150 M"),
+        //        PostModel(name: "Home", pic: "images1", desc: "10.000 EGY , 150 M"),
+        //        PostModel(name: "Home", pic: "images1", desc: "10.000 EGY , 150 M"),
+        //        PostModel(name: "Home", pic: "images1", desc: "10.000 EGY , 150 M"),
+        //        PostModel(name: "Home", pic: "images1", desc: "10.000 EGY , 150 M"),
+        //        PostModel(name: "Home", pic: "images1", desc: "10.000 EGY , 150 M"),
+        //        PostModel(name: "Home", pic: "images1", desc: "10.000 EGY , 150 M"),
+        //        PostModel(name: "Home", pic: "images1", desc: "10.000 EGY , 150 M"),
+        
     ]
+    
+    init() {
+//        getDatas()
+    }
+    
+    func getDatas()  {
+        withAnimation{isLoading.toggle()}
+        
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now()+5) {
+            withAnimation{self.isLoading.toggle()}
+            
+            self.postsArray = [
+                
+                PostModel(name: "Home", pic: "images1", desc: "10.000 EGY , 150 M"),
+                PostModel(name: "Home", pic: "images1", desc: "10.000 EGY , 150 M"),
+                PostModel(name: "Home", pic: "images1", desc: "10.000 EGY , 150 M"),
+                PostModel(name: "Home", pic: "images1", desc: "10.000 EGY , 150 M"),
+                PostModel(name: "Home", pic: "images1", desc: "10.000 EGY , 150 M"),
+                PostModel(name: "Home", pic: "images1", desc: "10.000 EGY , 150 M"),
+                PostModel(name: "Home", pic: "images1", desc: "10.000 EGY , 150 M"),
+                PostModel(name: "Home", pic: "images1", desc: "10.000 EGY , 150 M"),
+                
+            ]
+            
+        }
+        
+        
+    }
 }

@@ -16,7 +16,7 @@ class HomeFavoritesViewModel: ObservableObject {
     @Published var favorArray:[FavoriteModel] = []
     
     init() {
-        getDatas()
+//        getDatas()
     }
     
     func getDatas()  {

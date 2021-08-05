@@ -9,7 +9,7 @@ import SwiftUI
 import MapKit
 
 struct MainHome: View {
-    @StateObject var vm = HomeFilterViewModel()
+    @EnvironmentObject var vm : HomeFilterViewModel
     let annotations = [
         AnnotatedItem(name: "London", coordinate: CLLocationCoordinate2D(latitude: 51.507222, longitude: -0.1275)),
         AnnotatedItem(name: "Paris", coordinate: CLLocationCoordinate2D(latitude: 48.8567, longitude: -0.3508)),
@@ -90,6 +90,11 @@ struct MainHome: View {
             
             
         }
+        .onAppear(perform: {
+            if vm.postsArray.isEmpty {
+                vm.getDatas()
+            }
+        })
     }
 }
 

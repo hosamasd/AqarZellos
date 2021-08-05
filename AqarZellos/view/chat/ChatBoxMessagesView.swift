@@ -39,7 +39,7 @@ struct ChatBoxMessagesView: View {
                     Spacer()
                 }
                 
-                if vm.txtMessage != "" {
+                if vm.txtFocused {
                     
                     Button(action: {
                         
@@ -77,7 +77,8 @@ struct ChatBoxMessagesView: View {
                 }
                 //                    SecondThirdCustomTextFieldHelp(txt: $vm.txtMessage,hint:"Message")
                 
-                DynamicHeightTextField( text: self.$vm.txtMessage, height: $textHeight)
+                DynamicHeightTextField( text: self.$vm.txtMessage, height: $textHeight, isFocus: $vm.txtFocused)
+                    
                 //                        .foregroundColor(.black.opacity(0.6))
                 
             }

@@ -12,7 +12,8 @@ struct HomeFilter: View {
     @StateObject var slider = CustomSlider(start: 200, end: 200000)
     @StateObject var Spaceslider = CustomSlider(start: 100, end: 20000)
     @Binding var show:Bool
-    
+//    @EnvironmentObject var vm : HomeFilterViewModel
+
     var body: some View {
         ZStack {
             
